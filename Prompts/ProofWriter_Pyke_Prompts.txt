@@ -1,0 +1,129 @@
+Task Description: You are given a problem description and a question. The task is to: 
+1) define all the predicates in the problem
+2) parse the problem into logic rules based on the defined predicates
+3) write all the facts mentioned in the problem
+4) parse the question into the logic form
+------
+Problem:
+If someone sees the lion and the lion is kind then they are red. 
+If someone visits the lion and they are red then the lion visits the squirrel. 
+If someone is kind then they see the lion. If the lion visits the squirrel then the lion chases the bear. 
+If the squirrel chases the lion then the lion is kind. 
+If someone is big then they chase the lion. 
+If someone chases the bear then the bear is big. 
+If someone chases the lion then the lion is kind. 
+If someone is red then they visit the bear. 
+The bear sees the lion. The bear visits the lion. 
+The bear visits the squirrel. The lion chases the bear. 
+The lion chases the mouse. 
+The lion is big. 
+The lion sees the squirrel. 
+The mouse chases the bear. 
+The mouse visits the lion. 
+The squirrel is young. 
+The squirrel visits the lion. 
+The squirrel visits the mouse.
+Question:
+Based on the above information, is the following statement true or false? The lion is red.
+###
+Predicates:
+Sees($x, $y) ::: Does x see y?
+Kind($x, bool) ::: Is x kind?
+Visits($x, $y) ::: Does x visit y?
+Red($x, bool) ::: Is x red?
+Chases($x, $y) ::: Does x chase y?
+Big($x, bool) ::: Is x big?
+Young($x, bool) ::: Is x young?
+Facts:
+Sees($x, lion) ::: Someone sees the lion.
+Kind($x, lion) ::: The lion is kind.
+Visits($x, lion) ::: Someone visits the lion.
+Red($x, lion) ::: The lion is red.
+Visits($x, squirrel) ::: Someone visits the squirrel.
+Kind($x, squirrel) ::: The squirrel is kind.
+Chases($x, bear) ::: Someone chases the bear.
+Big($x, bear) ::: The bear is big.
+Chases($x, lion) ::: Someone chases the lion.
+Red($x, squirrel) ::: Someone is red and visits the squirrel.
+Sees(bear, lion) ::: The bear sees the lion.
+Visits(bear, lion) ::: The bear visits the lion.
+Visits(bear, squirrel) ::: The bear visits the squirrel.
+Chases(lion, bear) ::: The lion chases the bear.
+Chases(lion, mouse) ::: The lion chases the mouse.
+Big(lion, True) ::: The lion is big.
+Sees(lion, squirrel) ::: The lion sees the squirrel.
+Chases(mouse, bear) ::: The mouse chases the bear.
+Visits(mouse, lion) ::: The mouse visits the lion.
+Young(squirrel, True) ::: The squirrel is young.
+Visits(squirrel, lion) ::: The squirrel visits the lion.
+Visits(squirrel, mouse) ::: The squirrel visits the mouse.
+Rules:
+Sees($x, lion) && Kind(lion, True) >>> Red($x, True) ::: If someone sees the lion and the lion is kind then they are red.
+Visits($x, lion) && Red($x, True) >>> Visits(lion, squirrel) ::: If someone visits the lion and they are red then the lion visits the squirrel.
+Kind($x, True) >>> Sees($x, lion) ::: If someone is kind then they see the lion.
+Visits(lion, squirrel) >>> Chases(lion, bear) ::: If the lion visits the squirrel then the lion chases the bear.
+Chases(squirrel, lion) >>> Kind(lion, True) ::: If the squirrel chases the lion then the lion is kind.
+Big($x, True) >>> Chases($x, lion) ::: If someone is big then they chase the lion.
+Chases($x, bear) >>> Big(bear, True) ::: If someone chases the bear then the bear is big.
+Chases($x, lion) >>> Kind(lion, True) ::: If someone chases the lion then the lion is kind.
+Red($x, True) >>> Visits($x, bear) ::: If someone is red then they visit the bear.
+Query:
+Red(lion, True) ::: The lion is red.
+------
+Problem:
+If someone is furry then they are blue. 
+If someone is furry and nice then they are green. 
+If someone is smart then they are quiet. Nice, blue people are furry. 
+Blue, furry people are nice. 
+Green, smart people are furry. 
+If Charlie is quiet then Charlie is furry. 
+All big, blue people are green. 
+All blue people are smart. 
+Anne is furry. 
+Anne is green. 
+Anne is nice. 
+Anne is quiet. 
+Charlie is smart. 
+Dave is blue. 
+Dave is nice. 
+Fiona is blue. 
+Fiona is furry. 
+Fiona is smart.
+Question: Based on the above information, is the following statement true or false? Charlie is not furry.
+###
+Predicates:
+Furry($x, bool) ::: Is x furry?
+Blue($x, bool) ::: Is x blue?
+Nice($x, bool) ::: Is x nice?
+Green($x, bool) ::: Is x green?
+Smart($x, bool) ::: Is x smart?
+Quiet($x, bool) ::: Is x quiet?
+Big($x, bool) ::: Is x big?
+Facts:
+Furry($x, True) >>> Blue($x, True) ::: If someone is furry then they are blue.
+Furry($x, True) && Nice($x, True) >>> Green($x, True) ::: If someone is furry and nice then they are green.
+Smart($x, True) >>> Quiet($x, True) ::: If someone is smart then they are quiet.
+Nice($x, True) && Blue($x, True) >>> Furry($x, True) ::: Nice, blue people are furry.
+Blue($x, True) && Furry($x, True) >>> Nice($x, True) ::: Blue, furry people are nice.
+Green($x, True) && Smart($x, True) >>> Furry($x, True) ::: Green, smart people are furry.
+Quiet(Charlie, True) >>> Furry(Charlie, True) ::: If Charlie is quiet then Charlie is furry.
+Big($x, True) && Blue($x, True) >>> Green($x, True) ::: All big, blue people are green.
+Blue($x, True) >>> Smart($x, True) ::: All blue people are smart.
+Furry(Anne, True) ::: Anne is furry.
+Blue(Anne, True) ::: Anne is blue.
+Nice(Anne, True) ::: Anne is nice.
+Quiet(Anne, True) ::: Anne is quiet.
+Smart(Charlie, True) ::: Charlie is smart.
+Blue(Dave, True) ::: Dave is blue.
+Nice(Dave, True) ::: Dave is nice.
+Blue(Fiona, True) ::: Fiona is blue.
+Furry(Fiona, True) ::: Fiona is furry.
+Smart(Fiona, True) ::: Fiona is smart.
+Query:
+Furry(Charlie, False) ::: Charlie is not furry.
+------
+Problem:
+[[PROBLEM]]
+Question:
+[[QUESTION]]
+###

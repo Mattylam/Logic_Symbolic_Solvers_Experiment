@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D2-1286",
+    "context": "Bob is smart. Charlie is quiet. Erin is smart. Harry is nice. All nice things are smart. If something is smart and nice then it is green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is smart.",
+    "answer": "A",
+    "options": [
+      "A) True",
+      "B) False",
+      "C) Unknown"
+    ],
+    "raw_logic_programs": [
+      "Predicates:\nSmart(x) ::: x is smart.\nQuiet(x) ::: x is quiet.\nNice(x) ::: x is nice.\nGreen(x) ::: x is green.\nPremises:\nSmart(Bob) ::: Bob is smart.\nQuiet(Charlie) ::: Charlie is quiet.\nSmart(Erin) ::: Erin is smart.\nNice(Harry) ::: Harry is nice.\n∀x (Nice(x) → Smart(x)) ::: All nice things are smart.\n∀x ((Smart(x) ∧ Nice(x)) → Green(x)) ::: If something is smart and nice then it is green.\nConclusion:\nSmart(Erin) ::: Erin is smart."
+    ]
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D2-2109",
+    "context": "Bob is furry. Bob is round. Bob is white. Bob is young. Dave is furry. Dave is white. Fiona is big. Fiona is kind. Fiona is quiet. Fiona is white. Fiona is young. Harry is big. Harry is quiet. Harry is round. Harry is white. White, furry things are kind. If Bob is quiet and Bob is white then Bob is big. White, furry things are big. All kind, young things are round. White, kind things are round. All quiet things are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not quiet.",
+    "answer": "B",
+    "options": [
+      "A) True",
+      "B) False",
+      "C) Unknown"
+    ],
+    "raw_logic_programs": [
+      "Predicates:\nFurry(x) ::: x is furry.\nRound(x) ::: x is round.\nWhite(x) ::: x is white.\nYoung(x) ::: x is young.\nKind(x) ::: x is kind.\nQuiet(x) ::: x is quiet.\nBig(x) ::: x is big.\nPremises:\nFurry(Bob) ::: Bob is furry.\nRound(Bob) ::: Bob is round.\nWhite(Bob) ::: Bob is white.\nYoung(Bob) ::: Bob is young.\nFurry(Dave) ::: Dave is furry.\nWhite(Dave) ::: Dave is white.\nBig(Fiona) ::: Fiona is big.\nKind(Fiona) ::: Fiona is kind.\nQuiet(Fiona) ::: Fiona is quiet.\nWhite(Fiona) ::: Fiona is white.\nYoung(Fiona) ::: Fiona is young.\nBig(Harry) ::: Harry is big.\nQuiet(Harry) ::: Harry is quiet.\nRound(Harry) ::: Harry is round.\n∀x ((White(x) ∧ Furry(x)) → Kind(x)) ::: White, furry things are kind.\n∀x ((Quiet(Bob) ∧ White(Bob)) → Big(Bob)) ::: If Bob is quiet and Bob is white then Bob is big.\n∀x ((White(x) ∧ Furry(x)) → Big(x)) ::: White, furry things are big.\n∀x ((Kind(x) ∧ Young(x)) → Round(x)) ::: All kind, young things are round.\n∀x ((White(x) ∧ Kind(x)) → Round(x)) ::: White, kind things are round.\n∀x (Quiet(x) → Round(x)) ::: All quiet things are round.\nConclusion:\n¬Quiet(Harry) ::: Harry is not quiet."
+    ]
+  }
+]

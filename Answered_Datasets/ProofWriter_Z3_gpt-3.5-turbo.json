@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ProofWriter_AttNoneg-OWA-D5-1041_Q1",
+    "context": "Bob is cold. Bob is quiet. Bob is red. Bob is smart. Charlie is kind. Charlie is quiet. Charlie is red. Charlie is rough. Dave is cold. Dave is kind. Dave is smart. Fiona is quiet. If something is quiet and cold then it is smart. Red, cold things are round. If something is kind and rough then it is red. All quiet things are rough. Cold, smart things are red. If something is rough then it is cold. All red things are rough. If Dave is smart and Dave is kind then Dave is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is kind.",
+    "answer": "A",
+    "options": [
+      "A) True",
+      "B) False",
+      "C) Unknown"
+    ],
+    "raw_logic_programs": [
+      "```python\nfrom z3 import *\n\n# Create Z3 solver\nsolver = Solver()\n\n# Define variables\nBob = Const('Bob', BoolSort())\nCharlie = Const('Charlie', BoolSort())\nDave = Const('Dave', BoolSort())\nFiona = Const('Fiona', BoolSort())\n\n# Bob is cold.\ncold = Function('cold', BoolSort())\nsolver.add(cold(Bob))\n\n# Bob is quiet.\nquiet = Function('quiet', BoolSort())\nsolver.add(quiet(Bob))\n\n# Bob is red.\nred = Function('red', BoolSort())\nsolver.add(red(Bob))\n\n# Bob is smart.\nsmart = Function('smart', BoolSort())\nsolver.add(smart(Bob))\n\n# Charlie is kind.\nkind = Function('kind', BoolSort())\nsolver.add(kind(Charlie))\n\n# Charlie is quiet.\nsolver.add(quiet(Charlie))\n\n# Charlie is red.\nsolver.add(red(Charlie))\n\n# Charlie is rough.\nrough = Function('rough', BoolSort())\nsolver.add(rough(Charlie))\n\n# Dave is cold.\nsolver.add(cold(Dave))\n\n# Dave is kind.\nsolver.add(kind(Dave))\n\n# Dave is smart.\nsolver.add(smart(Dave))\n\n# Fiona is quiet.\nsolver.add(quiet(Fiona))\n\n# If something is quiet and cold then it is smart.\nsolver.add(Implies(And(quiet(Bob), cold(Bob)), smart(Bob)))\n\n# Red, cold things are round.\nsolver.add(Implies(And(red(Bob), cold(Bob)), round(Bob)))\n\n# If something is kind and rough then it is red.\nsolver.add(Implies(And(kind(Charlie), rough(Charlie)), red(Charlie)))\n\n# All quiet things are rough.\nsolver.add(Implies(quiet(Fiona), rough(Fiona)))\n\n# Cold, smart things are red.\nsolver.add(Implies(And(cold(Bob), smart(Bob)), red(Bob)))\n\n# If something is rough then it is cold.\nsolver.add(Implies(rough(Charlie), cold(Charlie)))\n\n# All red things are rough.\nsolver.add(Implies(red(Charlie), rough(Charlie)))\n\n# If Dave is smart and Dave is kind then Dave is quiet.\nsolver.add(Implies(And(smart(Dave), kind(Dave)), quiet(Dave)))\n\n# Check if Charlie is kind\nsolver.add(kind(Charlie))\n\n# Check if the formula is satisfiable\nif solver.check() == sat:\n    print(\"The statement 'Charlie is kind' is true.\")\nelif solver.check() == unsat:\n    print(\"The statement 'Charlie is kind' is false.\")\nelse:\n    print(\"The statement 'Charlie is kind' is unknown.\")\n```"
+    ]
+  },
+  {
+    "id": "ProofWriter_RelNeg-OWA-D5-81_Q11",
+    "context": "The cat eats the squirrel. The cat sees the squirrel. The cow eats the squirrel. The cow sees the cat. The rabbit is round. The rabbit sees the cat. The squirrel eats the rabbit. The squirrel is cold. The squirrel needs the rabbit. The squirrel sees the cat. If someone sees the cat and they are not green then they see the cow. If the rabbit is kind and the rabbit sees the squirrel then the squirrel needs the rabbit. Rough people are cold. If someone sees the rabbit then they are not round. If someone sees the squirrel and they are not green then they need the squirrel. If someone eats the cow then they see the rabbit. If someone eats the squirrel then they are rough. If someone is cold then they eat the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat is not round.",
+    "answer": "A",
+    "options": [
+      "A) True",
+      "B) False",
+      "C) Unknown"
+    ],
+    "raw_logic_programs": [
+      "# solution in Python:\ndef solution():\n    # The cat eats the squirrel.\n    eats(cat, squirrel)\n    # The cat sees the squirrel.\n    sees(cat, squirrel)\n    # The cow eats the squirrel.\n    eats(cow, squirrel)\n    # The cow sees the cat.\n    sees(cow, cat)\n    # The rabbit is round.\n    round(rabbit)\n    # The rabbit sees the cat.\n    sees(rabbit, cat)\n    # The squirrel eats the rabbit.\n    eats(squirrel, rabbit)\n    # The squirrel is cold.\n    cold(squirrel)\n    # The squirrel needs the rabbit.\n    needs(squirrel, rabbit)\n    # The squirrel sees the cat.\n    sees(squirrel, cat)\n    # If someone sees the cat and they are not green then they see the cow.\n    ForAll([x], Implies(And(sees(x, cat), Not(green(x))), sees(x, cow)))\n    # If the rabbit is kind and the rabbit sees the squirrel then the squirrel needs the rabbit.\n    ForAll([x], Implies(And(kind(rabbit), sees(rabbit, squirrel)), needs(squirrel, rabbit)))\n    # Rough people are cold.\n    ForAll([x], Implies(rough(x), cold(x)))\n    # If someone sees the rabbit then they are not round.\n    ForAll([x], Implies(sees(x, rabbit), Not(round(x))))\n    # If someone sees the squirrel and they are not green then they need the squirrel.\n    ForAll([x], Implies(And(sees(x, squirrel), Not(green(x))), needs(x, squirrel))\n    # If someone eats the cow then they see the rabbit.\n    ForAll([x], Implies(eats(x, cow), sees(x, rabbit)))\n    # If someone eats the squirrel then they are rough.\n    ForAll([x], Implies(eats(x, squirrel), rough(x)))\n    # If someone is cold then they eat the cow.\n    ForAll([x], Implies(cold(x), eats(x, cow)))\n\n    # Question: the following statement true, false, or unknown? The cat is not round.\n    return Not(round(cat))"
+    ]
+  }
+]
