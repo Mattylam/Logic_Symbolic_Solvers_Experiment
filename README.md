@@ -1,6 +1,6 @@
 # Logic_Symbolic_Solvers_Experiment
 
-Data and Codes for ## A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters
+Data and Codes for **A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters**
 
 Authors: Matthew Lam, Ehsan Shareghi
 
@@ -8,7 +8,7 @@ Monash University, Submission to EMNLP2024
 
 ## Introduction
 
-Existing published results try a variety of formalism and tools to compare the benefits of this paradigm (Pan et al., 2023; Ye et al., 2023; Gao
+Existing published results try a variety of formalism and tools to compare the benefits of incorporating LLM with symbolic solvers (Pan et al., 2023; Ye et al., 2023; Gao
 et al., 2023; Lyu et al., 2023). However, there is a degree of inconsistency in how these existing papers conduct experiments on different datasets, making it impossible to have a fair understanding of each approach. A contributing factor to this is the variability of tools and methods that are being used in different papers.  Pan et al. (2023) justifies the use of different solvers based on the type of reasoning dataset it is trying to solve (e.g.,  Pyke is used to solve a Deductive Reasoning Dataset ProofWriter), whereas Ye et al. (2023) uses Z3  an SMT solver on the same dataset exhibiting better performance. There is currently a lack of constituent comparison that will allow others to understand better where this performance gain stems from. In this paper, we take 3 widely used tools Z3 , Pyke and Prover9 and compare (1) the difficulty of translating natural language into their desired input format, and (2) the internal capability of these tools at solving certain satisfiability tasks. To conduct this, we choose GPT-3.5-Turbo  and LLaMA-13B, and 3 widely used benchmarks ProofWriter, FOLIO , ProntoQA, and conduct a fair side-by-side comparison of tools by trying various number of identical few-shots prompts, and minimal adjustment for each solver.
 
 First, install all the required packages:
