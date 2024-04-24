@@ -1,6 +1,6 @@
 # Logic_Symbolic_Solvers_Experiment
 
-Data and Codes for ["A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters"]
+Data and Codes for ## A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters
 
 Authors: Matthew Lam, Ehsan Shareghi
 
