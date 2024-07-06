@@ -45,7 +45,7 @@ The generated logic programs will be saved in `Answered_Datasets`.
 After generating logic programs, we can perform inference with symbolic solvers. At the root directory, run the following commands:
 
 ```bash
-python models/logic_inference.py \
+python logic_inference.py \
     --solver "Z3/Pyke/Prover9"
     --depth "d2/d3/d5"
     --dataset_name "Dataset Name [ProntoQA | ProofWriter | FOLIO]" \
@@ -58,7 +58,7 @@ The logic reasoning results will be saved in `Processed_Datasets`.
 To evaluate the logic reasoning results, please run the following commands:
 
 ```bash
-python models/evaluation.py \
+python evaluation.py \
     --solver "Z3/Pyke/Prover9"
     --depth "d2/d3/d5"
     --dataset_name "Dataset Name [ProntoQA | ProofWriter | FOLIO]" \
