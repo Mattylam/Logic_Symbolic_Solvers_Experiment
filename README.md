@@ -30,7 +30,7 @@ We evaluate on the following datasets:
 To generate logic programs for logical reasoning problems in each dataset, at the root directory, run the following commands:
 
 ```bash
-python models/logic_program.py \
+python logic_program.py \
     --api_key "Your OpenAI API Key" \
     --solver "Z3/Pyke/Prover9"
     --depth "d2/d3/d5"
