@@ -4,7 +4,7 @@ Data and Code for **A Closer Look at Logical Reasoning with LLMs: The Choice of 
 
 Authors: Matthew Lam, Ehsan Shareghi
 
-Monash University, Submission to EMNLP2024
+Monash University, Submission to CONNL2024
 
 ## Introduction
 
