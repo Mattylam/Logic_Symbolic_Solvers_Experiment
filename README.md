@@ -2,9 +2,9 @@
 
 Data and Code for **A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters**
 
-Authors: Matthew Lam, Ehsan Shareghi
+Authors: Matthew Lam, Ramya Thatikonda, Ehsan Shareghi
 
-Monash University, Submission to CONNL2024
+Monash University
 
 ## Introduction
 
@@ -35,7 +35,8 @@ python logic_program.py \
     --solver "Z3/Pyke/Prover9"
     --depth "d2/d3/d5"
     --dataset_name "Dataset Name [ProntoQA | ProofWriter | FOLIO]" \
-    --model_name "Model Name [text-davinci-003 | gpt-4]" \
+    --model_name "Model Name [gpt-3.5-turbo | gpt-4o | command-r-plus | gemini-1.0-pro-latest]" \
+    --shot "1/2/4"
     --max_new_tokens 2000 \
 ```
 The generated logic programs will be saved in `Answered_Datasets`.
@@ -49,7 +50,8 @@ python logic_inference.py \
     --solver "Z3/Pyke/Prover9"
     --depth "d2/d3/d5"
     --dataset_name "Dataset Name [ProntoQA | ProofWriter | FOLIO]" \
-    --model_name "Model Name [text-davinci-003 | gpt-4]" \
+    --model_name "Model Name [gpt-3.5-turbo | gpt-4o | command-r-plus | gemini-1.0-pro-latest]" \
+    --shot "1/2/4" \
 ```
 The logic reasoning results will be saved in `Processed_Datasets`.
 
@@ -62,7 +64,8 @@ python evaluation.py \
     --solver "Z3/Pyke/Prover9"
     --depth "d2/d3/d5"
     --dataset_name "Dataset Name [ProntoQA | ProofWriter | FOLIO]" \
-    --model_name "Model Name [text-davinci-003 | gpt-4]"
+    --model_name "Model Name [gpt-3.5-turbo | gpt-4o | command-r-plus | gemini-1.0-pro-latest]" \
+    --shot "1/2/4"
 ```
 
 This paper's code was inspired by SatLM and LogicLM. 
