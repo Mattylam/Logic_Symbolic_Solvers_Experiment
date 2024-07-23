@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D3-499",
+    "context": "The tiger is round. All green things are kind. All kind things are rough. All round things are kind. Rough things are cold. All cold, round things are kind. Round, cold things are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is round.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D3-791",
+    "context": "The bear is cold. The bear is kind. The bear is young. The bear visits the dog. The dog is blue. The dog is young. The dog needs the rabbit. The dog visits the bear. The dog visits the rabbit. The lion is kind. The lion needs the bear. The rabbit sees the bear. If something needs the dog then it sees the lion. If something sees the bear and it needs the rabbit then the rabbit is young. If the dog needs the bear and the bear needs the lion then the bear visits the dog. If something visits the lion then it sees the bear. If something is blue then it visits the lion. If something needs the rabbit and the rabbit visits the bear then it visits the lion.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog does not visit the bear.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  }
+]

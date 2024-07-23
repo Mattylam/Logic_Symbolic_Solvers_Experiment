@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-650",
+    "context": "Anne is smart. Charlie is nice. Erin is furry. Erin is white. Fiona is smart. Fiona is white. Fiona is young. Nice, smart things are young. All young, white things are cold. White things are red. All furry, red things are nice. All young things are white. All young things are white. All smart, cold things are furry. If something is nice and white then it is smart. If Anne is furry and Anne is white then Anne is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is smart.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-295",
+    "context": "Charlie is big. Charlie is rough. Charlie is smart. Charlie is young. Erin is kind. Erin is quiet. Erin is rough. Erin is young. Fiona is smart. Gary is big. Gary is kind. Gary is smart. If something is smart then it is kind. If something is kind then it is quiet. All nice, big things are quiet. Kind, quiet things are nice. Big things are smart. Nice, young things are big. If something is smart and young then it is big. If something is nice and quiet then it is big. All kind, big things are young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is not big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-613",
+    "context": "Anne is blue. Anne is nice. Anne is quiet. Anne is rough. Fiona is big. Fiona is blue. Fiona is quiet. Gary is blue. Gary is quiet. Gary is rough. Gary is white. Harry is white. All big people are rough. All blue, nice people are big. If someone is rough then they are green. All nice people are big. Green people are blue. Rough, white people are nice. White people are nice. Green people are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is white.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-281",
+    "context": "The bear eats the cow. The cat chases the bear. The cat eats the bear. The cat eats the tiger. The cat is green. The cat is kind. The cat is rough. The cat sees the bear. The cat sees the tiger. The cow eats the bear. The cow eats the tiger. The cow is green. The cow sees the cat. The tiger chases the bear. The tiger chases the cat. The tiger chases the cow. If someone chases the bear and the bear is cold then they eat the cat. If someone chases the bear and the bear chases the tiger then the bear sees the tiger. If the cat chases the bear and the cat sees the tiger then the bear chases the tiger. If someone chases the tiger and they are green then the tiger chases the cow. Nice, kind people are cold. If someone chases the bear then the bear chases the cat. If someone chases the cat then they are nice. If someone is nice then they are kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat sees the tiger.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-659",
+    "context": "Anne is furry. Charlie is furry. Charlie is rough. Erin is furry. Erin is quiet. Erin is rough. Fiona is big. Fiona is nice. Fiona is red. Fiona is rough. If someone is red and not round then they are quiet. If Erin is red and Erin is big then Erin is furry. If someone is round and nice then they are big. All furry, nice people are big. If someone is rough then they are nice. All quiet, furry people are rough. If someone is big and quiet then they are furry. If someone is furry and not round then they are red. All quiet, furry people are red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is not furry.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 4)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-442",
+    "context": "The cat visits the mouse. The dog visits the cat. The mouse eats the dog. The mouse is cold. The mouse needs the rabbit. The rabbit is cold. The rabbit is young. If something eats the cat and it does not eat the rabbit then it needs the mouse. If something visits the rabbit then the rabbit eats the mouse. If something eats the rabbit then the rabbit needs the cat. If something visits the dog and it needs the mouse then the mouse visits the cat. If something is rough and it needs the mouse then the mouse needs the cat. If something needs the rabbit then the rabbit is rough. If something needs the cat then the cat is rough. If something is rough and it does not need the dog then it eats the cat.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog eats the rabbit.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 4)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-726",
+    "context": "The bear chases the dog. The bear eats the squirrel. The dog visits the squirrel. The mouse chases the dog. The mouse eats the dog. The squirrel chases the dog. The squirrel is round. If someone chases the dog then they are young. If someone visits the bear and the bear is nice then they visit the dog. If someone chases the bear then they visit the dog. If someone is young and round then they chase the bear. If someone is blue then they eat the squirrel. If the squirrel visits the dog then the dog is nice. If someone is nice then they are cold. If someone eats the dog and they visit the mouse then the mouse visits the bear. If someone visits the dog then they eat the dog.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse eats the dog.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-680",
+    "context": "Bob is kind. Charlie is cold. Charlie is kind. Charlie is nice. Charlie is quiet. Charlie is smart. Fiona is quiet. Fiona is smart. Gary is nice. Gary is quiet. Gary is white. If Fiona is cold then Fiona is nice. All nice things are white. If something is white then it is nice. Nice, white things are quiet. White, smart things are rough. Smart, kind things are rough. All cold things are white. If Bob is kind then Bob is white. Quiet, kind things are smart.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is not smart.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-658",
+    "context": "Anne is rough. Charlie is quiet. Charlie is smart. Charlie is white. Erin is quiet. Erin is red. Fiona is quiet. Fiona is red. Fiona is round. Fiona is smart. Fiona is white. If someone is furry and round then they are smart. All round, red people are furry. All smart, furry people are rough. If Erin is red then Erin is white. All smart, rough people are furry. All furry, rough people are round. If someone is white then they are rough. If someone is red and rough then they are smart. All red, rough people are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is red.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-450",
+    "context": "Anne is quiet. Bob is big. Bob is green. Bob is nice. Bob is quiet. Bob is young. Charlie is big. Charlie is green. Charlie is nice. Gary is nice. If something is green then it is young. If Gary is green and Gary is not nice then Gary is quiet. If something is nice then it is green. If Gary is quiet then Gary is big. If Anne is not red and Anne is not green then Anne is smart. Smart things are quiet. If something is red then it is quiet. Young, big things are smart. All young things are smart.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is big.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 10)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-691",
+    "context": "The bald eagle sees the cat. The cat eats the dog. The cat is big. The cat is kind. The dog eats the bald eagle. The dog eats the cat. The dog is kind. The dog sees the lion. The lion eats the bald eagle. The lion is green. The lion is nice. The lion sees the dog. Cold things are green. If something sees the lion then it needs the dog. If something needs the bald eagle then it sees the lion. If something is nice then it sees the lion. If something is big then it sees the cat. If something is green and it needs the dog then it eats the cat. If something is green and it eats the cat then the cat needs the bald eagle. If something eats the bald eagle then the bald eagle is nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion is not green.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-280",
+    "context": "The bald eagle chases the dog. The bald eagle chases the tiger. The bald eagle eats the dog. The bald eagle is big. The bald eagle is young. The bald eagle sees the dog. The bald eagle sees the tiger. The dog chases the bald eagle. The dog eats the bald eagle. The dog sees the tiger. The mouse is big. The mouse sees the bald eagle. The tiger is red. The tiger is young. If someone eats the bald eagle then the bald eagle chases the mouse. If someone is cold and they see the tiger then they see the mouse. If someone eats the tiger then the tiger eats the bald eagle. If someone sees the tiger then they are big. If someone eats the bald eagle then they see the tiger. If someone is cold then they eat the tiger. If someone chases the mouse then the mouse is cold. If someone is cold then they chase the bald eagle. If the mouse is not cold and the mouse does not chase the bald eagle then the bald eagle is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is green.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-978",
+    "context": "The cat is kind. The cat is young. The cat needs the tiger. The mouse chases the cat. The mouse is kind. The rabbit chases the cat. The rabbit chases the mouse. The rabbit is green. The rabbit is kind. The rabbit needs the mouse. The tiger chases the mouse. If the rabbit likes the tiger and the tiger likes the rabbit then the tiger chases the rabbit. If someone likes the rabbit then the rabbit likes the tiger. If someone likes the cat and they are young then they like the rabbit. If someone likes the tiger then they are young. If someone is green and they do not chase the mouse then they are young. If someone is kind then they like the cat. If someone likes the cat and they do not need the tiger then the tiger is red. If someone is rough and not young then they need the cat. If someone is red and they do not like the rabbit then the rabbit likes the mouse.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit chases the mouse.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 30)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-253",
+    "context": "Anne is kind. Anne is quiet. Dave is blue. Dave is cold. Dave is kind. Dave is quiet. Dave is red. Erin is blue. Erin is cold. Erin is kind. Erin is nice. Erin is quiet. Fiona is cold. Fiona is red. Kind things are quiet. If something is cold then it is green. All red things are green. If something is cold then it is blue. Cold, blue things are kind. Blue things are kind. Nice, green things are cold. If something is nice then it is red. If something is kind then it is nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not cold.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1039",
+    "context": "Charlie is big. Charlie is kind. Charlie is nice. Charlie is round. Erin is round. Fiona is cold. Fiona is kind. Fiona is round. Harry is round. Harry is smart. If something is blue then it is cold. Blue, cold things are nice. Blue things are big. All round things are blue. Smart things are blue. Round, smart things are kind. All nice, round things are smart. Nice, round things are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-875",
+    "context": "Anne is round. Bob is furry. Bob is round. Charlie is furry. Charlie is kind. Charlie is nice. Charlie is red. Charlie is round. Charlie is young. Fiona is kind. Fiona is young. Young, blue things are nice. All young things are nice. Blue, round things are furry. If something is red then it is furry. If something is blue and furry then it is red. All nice things are blue. Round things are young. All young things are kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is round.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-593",
+    "context": "The cat is big. The cat likes the dog. The cat likes the mouse. The dog eats the cat. The dog eats the tiger. The dog likes the mouse. The mouse sees the tiger. The tiger eats the cat. The tiger eats the dog. The tiger eats the mouse. The tiger is red. If someone sees the dog and the dog is cold then they are nice. If someone is big then they see the dog. If someone eats the cat then they are nice. If someone sees the mouse then they see the tiger. If someone is nice then they eat the dog. All red people are rough. If the dog sees the tiger and the dog sees the mouse then the mouse likes the dog. If someone likes the dog and the dog eats the tiger then they eat the cat. If someone eats the tiger and the tiger is red then they see the mouse.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is not red.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1024",
+    "context": "Bob is blue. Bob is nice. Dave is big. Dave is blue. Dave is cold. Dave is furry. Dave is green. Dave is nice. Dave is white. Erin is furry. Erin is green. Erin is white. Gary is big. Gary is green. Gary is nice. Gary is white. If Dave is nice then Dave is furry. Blue, furry things are green. Cold things are furry. If something is nice then it is cold. Furry things are cold. White things are big. If something is green and blue then it is white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-280",
+    "context": "The bald eagle needs the mouse. The bald eagle sees the mouse. The cow is red. The cow is rough. The cow sees the bald eagle. The cow sees the mouse. The dog eats the bald eagle. The dog is cold. The dog is rough. The dog needs the bald eagle. The mouse eats the bald eagle. The mouse eats the dog. The mouse is red. The mouse is rough. The mouse is young. The mouse sees the cow. If something is young then it needs the dog. If something eats the cow then the cow is kind. If something is young then it sees the bald eagle. If something is cold and it needs the dog then it eats the mouse. If something needs the bald eagle and it is red then it is young. If something eats the mouse then it needs the mouse. If something eats the bald eagle then it is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog is cold.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-518",
+    "context": "Bob is kind. Charlie is nice. Charlie is quiet. Charlie is rough. Charlie is round. Charlie is white. Erin is nice. Erin is rough. Erin is round. Erin is smart. Erin is white. Fiona is nice. Fiona is round. Fiona is white. All rough things are round. Kind things are smart. If something is smart and nice then it is rough. If something is smart then it is nice. If something is smart then it is nice. All round things are nice. If something is round then it is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is not white.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-335",
+    "context": "The cat chases the lion. The cat eats the rabbit. The cat likes the lion. The cat likes the rabbit. The lion chases the rabbit. The lion is red. The lion likes the cat. The mouse chases the rabbit. The mouse eats the rabbit. The rabbit likes the cat. If the cat likes the lion and the lion chases the rabbit then the lion likes the mouse. If someone likes the mouse and the mouse likes the lion then the lion likes the rabbit. If someone chases the mouse then they like the lion. If someone is kind then they chase the mouse. If someone likes the mouse then the mouse is kind. If someone likes the cat and they are red then the cat eats the lion. If someone eats the cat and the cat likes the rabbit then they are red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse likes the cat.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1363",
+    "context": "Bob is cold. Bob is nice. Bob is round. Dave is young. Erin is nice. Erin is round. Fiona is cold. If something is green then it is blue. If something is green and round then it is cold. Cold things are nice. All nice things are red. If something is young then it is cold. If something is nice and round then it is green. If something is red and cold then it is green. All young, round things are nice. If Fiona is round and Fiona is young then Fiona is cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is young.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-225",
+    "context": "Anne is furry. Anne is quiet. Anne is round. Charlie is big. Charlie is furry. Charlie is green. Charlie is quiet. Charlie is round. Erin is big. Erin is green. Erin is rough. Harry is round. Rough things are round. Rough things are round. Round, quiet things are green. If something is rough then it is big. All green things are furry. If something is quiet then it is furry. If something is furry then it is blue. All round things are rough. Big things are quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not round.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-214",
+    "context": "Anne is kind. Anne is round. Erin is furry. Erin is kind. Erin is young. Fiona is smart. Fiona is young. Harry is furry. Harry is round. Harry is smart. If something is round and rough then it is furry. If Harry is round then Harry is furry. Blue things are rough. All young, furry things are blue. Young, smart things are blue. If Anne is smart then Anne is young. All smart, blue things are kind. Kind things are smart.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is round.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-958",
+    "context": "The bear chases the cat. The bear chases the cow. The bear is big. The bear is kind. The bear is rough. The bear likes the cat. The bear needs the cat. The bear needs the tiger. The cat chases the cow. The cat is kind. The cat likes the bear. The cat likes the cow. The cat needs the bear. The cow likes the bear. The tiger likes the cow. The tiger needs the cat. If someone likes the cow and the cow likes the bear then the bear is round. If someone likes the tiger and they like the bear then the bear is young. If someone likes the bear and the bear is round then the bear likes the tiger. If the cat is young then the cat chases the cow. If someone chases the cow then they chase the cat. If the cat likes the cow then the cow chases the bear. If someone likes the cow and the cow chases the cat then they need the cow. If the cow chases the bear and the bear is round then the cow needs the bear. If someone needs the bear then they chase the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat needs the bear.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1118",
+    "context": "Bob is kind. Charlie is green. Charlie is kind. Charlie is young. Dave is young. Erin is big. Erin is young. All white, green people are young. All rough, kind people are big. If someone is green then they are young. Young people are rough. Big, rough people are furry. Kind people are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is not big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-521",
+    "context": "The cow eats the lion. The lion eats the mouse. The lion needs the mouse. The mouse sees the lion. The tiger eats the lion. The tiger is green. The tiger is red. The tiger needs the lion. The tiger needs the mouse. The tiger sees the cow. If someone sees the lion then they are cold. If someone needs the tiger and they need the mouse then they are cold. If someone needs the tiger and the tiger eats the cow then the tiger needs the lion. All round people are green. All young, green people are round. If someone eats the mouse and the mouse sees the lion then they are green. If someone needs the tiger then the tiger sees the lion. If someone is cold and they see the lion then they need the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion sees the tiger.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-574",
+    "context": "Charlie is cold. Charlie is red. Dave is blue. Fiona is big. Fiona is blue. Gary is cold. Gary is round. If something is quiet then it is white. If Charlie is quiet then Charlie is blue. If something is red and big then it is cold. If something is big and round then it is cold. If something is cold then it is big. If Gary is big and Gary is blue then Gary is red. All cold things are round. All cold, big things are blue. If something is blue and red then it is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is cold.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-129",
+    "context": "Anne is big. Anne is white. Bob is big. Bob is kind. Bob is red. Bob is white. Erin is green. Erin is quiet. Erin is red. Erin is white. Harry is big. Harry is kind. Harry is red. Harry is white. If something is quiet then it is kind. All green, red things are rough. All quiet, green things are big. White things are quiet. If Bob is red then Bob is rough. Kind things are red. Red, quiet things are green. If Erin is rough and Erin is not quiet then Erin is big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not white.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 49)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1196",
+    "context": "Anne is round. Bob is blue. Bob is cold. Bob is quiet. Dave is quiet. Gary is blue. Gary is cold. Gary is furry. Gary is quiet. Gary is rough. Gary is round. Gary is young. All young people are rough. All rough people are quiet. If someone is rough and young then they are furry. Round people are young. If someone is furry and quiet then they are blue. All blue people are cold. If Bob is not young and Bob is not rough then Bob is furry.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is round.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 41)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-90",
+    "context": "The bear is kind. The mouse chases the bear. The mouse chases the rabbit. The mouse visits the rabbit. The rabbit is blue. The rabbit needs the mouse. The squirrel chases the mouse. The squirrel chases the rabbit. The squirrel is blue. The squirrel is green. The squirrel is young. If the squirrel is young and the squirrel needs the rabbit then the squirrel visits the rabbit. If something is cold then it needs the squirrel. If something visits the mouse and the mouse needs the squirrel then it needs the rabbit. If something chases the bear then it is cold. If something visits the bear and the bear visits the squirrel then the squirrel visits the rabbit. If something needs the squirrel then the squirrel visits the mouse. If the mouse visits the bear and the mouse visits the squirrel then the squirrel visits the bear.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse chases the bear.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-672",
+    "context": "Anne is cold. Anne is kind. Anne is round. Anne is smart. Anne is young. Erin is cold. Erin is round. Erin is smart. Gary is cold. Gary is kind. Gary is rough. Gary is round. Gary is smart. Gary is white. Gary is young. Harry is cold. If someone is kind then they are round. Young, cold people are white. All white people are young. All cold people are white. All round people are smart. If someone is young and cold then they are kind. All round people are kind. All young people are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-961",
+    "context": "Anne is cold. Anne is round. Erin is blue. Erin is furry. Fiona is green. Fiona is red. Gary is green. Furry, green things are cold. Round things are green. If something is round and green then it is red. All green things are blue. Kind things are round. All blue things are green. If something is cold then it is kind. If something is round and kind then it is cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is furry.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1187",
+    "context": "Anne is kind. Anne is young. Bob is rough. Charlie is cold. Charlie is kind. Charlie is rough. Charlie is smart. Fiona is kind. Fiona is rough. Fiona is smart. Rough, cold things are smart. All young things are kind. All kind things are blue. Young things are cold. If something is rough then it is cold. All young, blue things are kind. If something is cold and smart then it is young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is cold.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1368",
+    "context": "Bob is blue. Bob is green. Bob is nice. Charlie is blue. Charlie is cold. Charlie is round. Gary is blue. Gary is round. Harry is cold. Harry is round. Green, red people are cold. Red, round people are cold. If someone is white and round then they are red. All cold, round people are nice. If someone is nice then they are green. If Harry is round then Harry is white. All round people are white. If someone is blue then they are white. If someone is red then they are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is not blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1186",
+    "context": "Erin is blue. Erin is cold. Erin is smart. Fiona is round. Gary is cold. Gary is green. Gary is quiet. Gary is round. Gary is smart. Harry is smart. Nice, green people are round. Green people are nice. If someone is blue then they are green. If someone is blue then they are smart. Nice, round people are blue. Smart people are green. If Harry is blue and Harry is smart then Harry is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is cold.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-370",
+    "context": "The cow chases the lion. The cow chases the squirrel. The cow is round. The cow likes the dog. The dog likes the cow. The dog likes the lion. The lion chases the cow. The lion chases the squirrel. The lion is cold. The lion is green. The lion likes the dog. The squirrel is cold. The squirrel is young. The squirrel needs the lion. If the cow needs the squirrel then the cow chases the squirrel. If something chases the cow then it needs the squirrel. If something is round then it likes the squirrel. If something is big then it is green. If something is big and it chases the dog then the dog chases the cow. If something chases the lion and it likes the squirrel then the squirrel is green. If something is green then it chases the cow. If the dog is green then the dog is round. If something needs the squirrel then it likes the squirrel.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion chases the cow.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-971",
+    "context": "Charlie is green. Charlie is kind. Erin is blue. Erin is kind. Fiona is green. Gary is blue. Gary is furry. Gary is green. Gary is kind. Gary is round. If someone is round and kind then they are green. All green, round people are blue. Round people are big. If someone is kind then they are furry. All blue people are kind. If someone is green then they are big. If Erin is cold and Erin is green then Erin is blue. Cold, blue people are kind. All green, big people are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1335",
+    "context": "Anne is cold. Anne is green. Anne is rough. Charlie is kind. Dave is cold. Dave is furry. Dave is kind. Dave is quiet. Dave is red. Erin is kind. Erin is quiet. Erin is red. Furry, rough people are green. Red people are furry. All green people are kind. Kind people are quiet. If someone is cold then they are rough. All furry, rough people are cold. All quiet people are red. All red, quiet people are cold. If Anne is kind then Anne is furry.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is not green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-314",
+    "context": "The bear chases the cow. The bear eats the squirrel. The bear is cold. The bear visits the mouse. The bear visits the squirrel. The cow eats the mouse. The cow is cold. The cow visits the bear. The cow visits the squirrel. The mouse chases the cow. The squirrel eats the bear. If something eats the cow then the cow chases the squirrel. If something eats the squirrel and the squirrel eats the mouse then the mouse chases the cow. If something eats the mouse then it visits the cow. If something eats the mouse then it chases the bear. If something visits the bear and it visits the mouse then the bear is blue. If something eats the bear then the bear is cold. If something is blue and it eats the squirrel then it eats the cow. If the mouse chases the cow and the cow chases the squirrel then the mouse visits the bear. If something chases the bear then the bear is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow is cold.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-677",
+    "context": "Bob is furry. Bob is green. Charlie is furry. Charlie is kind. Charlie is young. Erin is green. Erin is kind. Fiona is blue. Fiona is furry. Fiona is smart. All young people are kind. Furry, cold people are young. Furry, blue people are smart. If someone is kind and furry then they are blue. If Bob is smart then Bob is furry. All furry, blue people are kind. If someone is furry then they are cold. If someone is young and furry then they are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1243",
+    "context": "Anne is big. Anne is young. Charlie is furry. Charlie is green. Charlie is young. Gary is furry. Harry is round. Round things are big. All round things are big. If Anne is big then Anne is furry. All round, green things are quiet. If Harry is quiet and Harry is furry then Harry is green. If something is big and young then it is smart. All furry things are round. If something is big then it is young. If Gary is smart and Gary is round then Gary is green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-789",
+    "context": "Anne is green. Bob is blue. Bob is furry. Bob is nice. Bob is round. Charlie is nice. Charlie is white. Fiona is furry. Fiona is kind. Fiona is round. If something is blue and green then it is kind. All green, white things are kind. White things are kind. If something is green and not furry then it is white. If something is blue and nice then it is white. If something is kind then it is nice. If something is furry and nice then it is blue. Blue things are round. If Anne is white and Anne is nice then Anne is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is furry.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 24)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-630",
+    "context": "Bob is big. Bob is nice. Bob is quiet. Dave is green. Dave is quiet. Gary is green. Gary is red. Gary is round. Harry is green. Harry is red. Harry is round. Nice, quiet people are big. If someone is red and round then they are smart. All quiet people are round. If someone is big and nice then they are quiet. If someone is big and red then they are nice. If someone is quiet and round then they are red. If someone is red and round then they are smart. If Bob is green then Bob is big. All quiet, smart people are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not quiet.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-272",
+    "context": "The bear needs the mouse. The lion is red. The mouse eats the rabbit. The mouse needs the bear. The mouse needs the lion. The rabbit is big. The rabbit is round. If something eats the bear then the bear sees the rabbit. If something sees the mouse and it eats the bear then it needs the rabbit. If something needs the mouse then it sees the lion. If something needs the mouse and it eats the lion then it eats the bear. If something sees the rabbit then the rabbit needs the lion. If something sees the lion then it eats the lion. If something is red and it does not need the rabbit then the rabbit sees the bear.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit is rough.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 42)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-410",
+    "context": "The bald eagle is green. The bald eagle needs the lion. The bald eagle sees the cat. The bald eagle sees the lion. The cat sees the bald eagle. The cow sees the bald eagle. The lion needs the bald eagle. If someone sees the cat and the cat is green then they visit the cat. If someone needs the cat and the cat needs the bald eagle then they are blue. If someone is blue and they need the lion then they see the lion. If someone sees the cow then the cow needs the bald eagle. If someone needs the bald eagle then they see the lion. If someone needs the cat then the cat is blue. If someone visits the lion and they are nice then the lion visits the cat. If someone needs the bald eagle and they see the lion then they see the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle sees the cat.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-261",
+    "context": "Dave is big. Dave is cold. Dave is green. Dave is nice. Dave is red. Dave is young. Erin is young. Fiona is red. Fiona is smart. Harry is cold. Harry is green. Harry is nice. If something is nice then it is cold. If Erin is cold and Erin is nice then Erin is smart. If something is cold and smart then it is big. All cold things are nice. If something is green then it is nice. If Harry is green and Harry is young then Harry is cold. If something is young then it is green. If Erin is cold and Erin is not nice then Erin is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not green.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 49)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-861",
+    "context": "The cat needs the dog. The dog is kind. The dog needs the rabbit. The rabbit eats the dog. The rabbit is green. The tiger chases the rabbit. The tiger is big. If something is nice and it eats the tiger then it needs the dog. If something chases the cat then it eats the cat. If the dog chases the tiger then the tiger needs the rabbit. If the rabbit chases the tiger then the rabbit chases the cat. If something chases the cat then the cat is kind. If something eats the dog then it chases the cat. If something is rough then it eats the dog. If something is kind then it is rough. If something eats the rabbit and the rabbit is big then it is kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is nice.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "Invalid query: Nice(tiger)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-451",
+    "context": "The bald eagle is cold. The bear eats the squirrel. The bear is kind. The bear needs the cat. The cat is kind. The cat visits the bald eagle. The cat visits the bear. The cat visits the squirrel. The squirrel is rough. The squirrel needs the bald eagle. The squirrel needs the bear. The squirrel visits the bald eagle. If something visits the squirrel then the squirrel eats the cat. If something eats the cat and it is big then the cat visits the bald eagle. If something visits the squirrel and it eats the bald eagle then the squirrel is kind. If something is red and it needs the cat then the cat eats the bald eagle. If something is kind then it needs the squirrel. If something visits the bald eagle then it needs the bald eagle. If something is red then it eats the cat. If something eats the bald eagle and it needs the squirrel then the bald eagle visits the bear. If something needs the squirrel then it is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat visits the squirrel.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-20",
+    "context": "Anne is furry. Bob is kind. Bob is rough. Bob is white. Dave is furry. Dave is red. Fiona is red. Blue things are white. If something is blue then it is white. All red things are nice. All white, kind things are rough. All blue, red things are rough. If something is kind then it is furry. White things are kind. If something is nice then it is blue. If Dave is rough then Dave is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not white.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-655",
+    "context": "Charlie is furry. Charlie is green. Charlie is kind. Fiona is furry. Fiona is green. Fiona is round. Fiona is smart. Fiona is young. Gary is round. Harry is kind. Harry is rough. Harry is smart. Young, furry people are round. If someone is kind and green then they are smart. Smart people are green. Young people are green. All round people are kind. If someone is smart then they are furry. If Harry is furry and Harry is round then Harry is rough. If someone is rough then they are young. If someone is kind then they are young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is rough.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 13)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-983",
+    "context": "The bald eagle chases the tiger. The bald eagle is cold. The bald eagle is rough. The dog chases the rabbit. The dog eats the rabbit. The rabbit chases the dog. The rabbit is round. The tiger chases the dog. The tiger eats the rabbit. The tiger is cold. If someone visits the dog and the dog eats the bald eagle then the bald eagle is green. If someone is red then they chase the rabbit. If someone eats the dog then they eat the rabbit. If someone chases the rabbit and the rabbit is green then they are green. If someone is green then they eat the dog. If someone visits the bald eagle and they are round then the bald eagle is green. If someone visits the rabbit and they eat the bald eagle then they eat the dog. If someone chases the dog then they visit the bald eagle. If someone is rough and they eat the rabbit then they eat the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle is rough.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1384",
+    "context": "Anne is furry. Anne is nice. Bob is cold. Bob is rough. Erin is big. Erin is nice. Erin is rough. Erin is white. Fiona is big. Fiona is cold. Fiona is nice. Fiona is rough. All furry people are big. If Erin is blue and Erin is not cold then Erin is nice. If someone is white then they are furry. If someone is nice and white then they are blue. If someone is big then they are blue. All nice, furry people are rough. All white, blue people are nice. If someone is cold and rough then they are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not cold.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 10)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-709",
+    "context": "The bald eagle is green. The bald eagle is rough. The bald eagle is young. The bald eagle needs the squirrel. The bald eagle sees the squirrel. The cat is round. The cat needs the bald eagle. The cat needs the dog. The cat visits the bald eagle. The dog needs the bald eagle. The dog sees the bald eagle. The dog visits the cat. The squirrel needs the cat. The squirrel visits the bald eagle. If something sees the dog then it sees the cat. If something needs the dog and it is round then it needs the cat. If something visits the squirrel then the squirrel visits the dog. If something is nice then it sees the dog. If something needs the cat then it is nice. If something sees the cat then it is green. If something needs the cat then it is rough. If something visits the squirrel and the squirrel visits the dog then the squirrel visits the bald eagle.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog is young.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1158",
+    "context": "Anne is rough. Anne is smart. Anne is young. Fiona is green. Fiona is kind. Fiona is rough. Gary is green. Gary is smart. Gary is young. Harry is young. All green things are cold. Kind things are cold. All young things are rough. If Harry is rough and Harry is young then Harry is round. If something is rough and round then it is smart. If something is green and not kind then it is smart. All kind, round things are green. Smart things are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is kind.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 36)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-506",
+    "context": "The bear chases the lion. The bear is kind. The bear is red. The bear likes the dog. The bear sees the mouse. The dog chases the bear. The dog chases the lion. The dog is big. The dog is blue. The dog is kind. The dog is nice. The dog sees the lion. The lion chases the bear. The mouse is kind. If something likes the mouse and the mouse is blue then it is kind. If something sees the bear and the bear likes the dog then the dog chases the lion. If something sees the mouse and the mouse is big then it is big. If something chases the mouse and it does not like the dog then it likes the mouse. If something likes the lion and it chases the mouse then it likes the mouse. If something sees the dog and it likes the dog then it likes the mouse. If something chases the lion and the lion sees the bear then it chases the mouse. If something sees the lion then the lion sees the bear. If something chases the bear and the bear chases the mouse then the mouse chases the lion.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog does not chase the bear.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 25)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-599",
+    "context": "Anne is furry. Anne is young. Charlie is blue. Charlie is nice. Charlie is young. Dave is furry. Dave is round. Harry is furry. Harry is kind. Harry is round. All young, nice people are round. If someone is green then they are kind. If someone is young and blue then they are green. Furry people are kind. All kind people are young. Young people are nice. All nice, round people are blue. If Charlie is kind then Charlie is furry. If someone is nice then they are furry.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is not green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-863",
+    "context": "Anne is furry. Anne is kind. Anne is nice. Anne is young. Bob is big. Bob is furry. Charlie is nice. Charlie is young. Dave is cold. Dave is kind. Dave is young. All cold, big people are furry. All big people are rough. All kind, big people are rough. If someone is nice and rough then they are kind. If Charlie is kind then Charlie is big. If someone is rough and kind then they are cold. Nice people are big. All rough, furry people are cold. Cold, nice people are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is kind.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-921",
+    "context": "Bob is furry. Bob is red. Bob is rough. Dave is big. Dave is furry. Dave is green. Dave is red. Dave is rough. Dave is round. Fiona is rough. Harry is rough. Round, red things are furry. If Bob is not rough then Bob is round. All rough things are red. Red, rough things are round. Furry, red things are quiet. If something is furry and big then it is green. All rough, quiet things are big. If something is rough and not quiet then it is big. All green, red things are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is not round.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 51)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-61",
+    "context": "Bob is round. Bob is white. Erin is white. Fiona is kind. Fiona is quiet. Fiona is red. Fiona is rough. Fiona is white. Fiona is young. Gary is kind. Gary is round. If something is young and round then it is red. If something is quiet and round then it is rough. Red, quiet things are kind. Kind things are young. Red, kind things are quiet. If Fiona is round then Fiona is rough. If Erin is quiet then Erin is round. If Bob is not red then Bob is rough. All rough things are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is quiet.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-398",
+    "context": "Bob is rough. Bob is round. Bob is young. Erin is rough. Gary is white. Gary is young. Harry is blue. Young, blue people are nice. Blue people are nice. White people are blue. If Erin is red and Erin is not white then Erin is rough. All blue, young people are rough. If someone is red and blue then they are rough. If Harry is red and Harry is nice then Harry is round. Nice people are young. All rough people are red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is young.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 23)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-298",
+    "context": "The cat is round. The dog likes the tiger. The rabbit is blue. The rabbit likes the dog. The tiger is big. The tiger is round. The tiger visits the dog. If the rabbit eats the tiger and the rabbit does not visit the tiger then the tiger is kind. If someone visits the tiger and they are not big then the tiger is nice. If someone is blue then they like the tiger. If someone likes the dog and the dog is big then they visit the rabbit. If someone visits the cat and the cat visits the dog then they are kind. All blue people are round. If the rabbit is round then the rabbit eats the tiger. If someone eats the tiger then they eat the cat. If someone eats the cat and they do not visit the rabbit then the cat eats the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit is not blue.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 4)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-735",
+    "context": "Anne is furry. Anne is nice. Anne is quiet. Anne is young. Charlie is furry. Charlie is quiet. Erin is furry. Erin is nice. Fiona is big. Fiona is smart. Big things are smart. All young things are quiet. If something is young then it is quiet. Quiet, furry things are big. Round things are young. Round, young things are nice. If Fiona is furry then Fiona is young. All furry things are round. If Charlie is smart and Charlie is big then Charlie is nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-230",
+    "context": "The bear is big. The bear is cold. The bear likes the cat. The bear visits the cat. The bear visits the cow. The cat is green. The cat needs the bear. The cow needs the dog. The dog is blue. The dog likes the bear. The dog visits the cow. If something is blue then it is red. If something likes the cow then the cow is big. If the cow needs the cat then the cow likes the cat. If something is blue then it is cold. If something is big and it likes the dog then the dog likes the cow. If something needs the bear and the bear needs the dog then the bear is red. If something likes the bear and it is big then it needs the dog. If something is big then it needs the cat. If the bear is big then the bear likes the dog.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat needs the bear.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-358",
+    "context": "The bear eats the cow. The cat eats the bear. The cat eats the cow. The cat is kind. The cat sees the cow. The cat visits the mouse. The cow eats the bear. The cow is big. The cow sees the cat. The cow visits the mouse. The mouse eats the bear. The mouse eats the cat. The mouse is kind. The mouse sees the cat. The mouse visits the cat. The mouse visits the cow. If someone is cold then they visit the bear. If someone visits the cat and the cat eats the mouse then they eat the cow. If someone visits the mouse then the mouse sees the cow. If the cow eats the cat then the cat is big. If someone visits the bear then the bear visits the mouse. If someone sees the cow then they eat the mouse. If someone visits the mouse then they are cold. If someone eats the cat and they are cold then the cat visits the bear. If someone sees the bear and they are rough then they see the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse does not visit the cow.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1095",
+    "context": "Bob is blue. Bob is cold. Bob is green. Bob is nice. Bob is red. Bob is round. Bob is white. Charlie is cold. Charlie is green. Charlie is round. Gary is blue. Gary is cold. Gary is green. Gary is nice. Gary is red. Harry is round. If Harry is round then Harry is nice. If something is nice then it is green. All white, round things are red. White, red things are cold. All cold things are blue. All nice things are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1062",
+    "context": "Anne is nice. Anne is round. Anne is young. Charlie is furry. Charlie is rough. Charlie is smart. Erin is big. Erin is furry. Erin is rough. Erin is round. Erin is smart. Erin is young. Harry is nice. Harry is young. All nice people are young. If someone is round and big then they are furry. Big people are furry. If Charlie is round then Charlie is smart. Young, furry people are round. All nice people are big. If Anne is rough then Anne is big. Furry, rough people are smart. If someone is round and big then they are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is smart.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-718",
+    "context": "Bob is round. Charlie is big. Charlie is furry. Charlie is green. Charlie is round. Charlie is white. Dave is big. Dave is quiet. Gary is green. Gary is quiet. All furry people are white. If someone is big then they are smart. All white, big people are round. If someone is quiet then they are smart. Smart people are big. All big, green people are furry. If someone is smart and round then they are quiet. Green people are smart. All smart, furry people are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is not quiet.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-781",
+    "context": "Anne is big. Anne is cold. Anne is round. Charlie is cold. Charlie is furry. Charlie is kind. Charlie is nice. Charlie is round. Erin is big. Gary is furry. Gary is kind. Gary is nice. Gary is quiet. Gary is round. Big things are quiet. If something is quiet and big then it is kind. If something is cold then it is round. Nice things are cold. All cold things are kind. If something is kind then it is nice. If something is nice and furry then it is quiet. All kind things are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-551",
+    "context": "Anne is blue. Anne is cold. Anne is smart. Bob is big. Bob is blue. Bob is quiet. Bob is round. Fiona is big. Fiona is cold. Gary is cold. Gary is rough. Gary is smart. If Bob is cold then Bob is smart. All quiet people are smart. All cold people are rough. Rough people are quiet. All big, round people are blue. If Anne is not quiet then Anne is blue. All smart, cold people are round. If someone is blue then they are round. If someone is blue then they are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is cold.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-977",
+    "context": "The cat is young. The cat visits the mouse. The cow is cold. The cow likes the lion. The lion is cold. The lion likes the cat. The lion needs the mouse. The lion visits the mouse. The mouse is cold. The mouse is red. The mouse is young. The mouse likes the cat. The mouse needs the cat. The mouse needs the cow. If something needs the cat and the cat is red then it is blue. Blue things are red. If something likes the mouse and the mouse likes the cat then the cat is blue. If something is cold and red then it likes the mouse. If something needs the cow and it is cold then it is young. If something is nice then it visits the lion. If something needs the lion then it likes the cat. If something visits the cat and it likes the lion then the cat is blue. If something is cold and blue then it needs the lion.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse is not young.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-109",
+    "context": "Bob is green. Dave is round. Gary is big. Gary is furry. Gary is green. Gary is nice. Gary is rough. Harry is big. Harry is blue. Harry is furry. Harry is green. If something is green and big then it is furry. All green things are round. If something is green and nice then it is big. If something is round then it is nice. If something is blue and big then it is nice. Furry, green things are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1355",
+    "context": "Dave is kind. Dave is rough. Erin is kind. Erin is white. Fiona is cold. Fiona is green. Fiona is kind. Fiona is rough. Harry is kind. Harry is red. All rough people are red. If someone is kind then they are red. Red, cold people are white. Cold, green people are white. Red people are cold. If someone is white and red then they are young. If Dave is green and Dave is white then Dave is kind. Young people are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is cold.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-485",
+    "context": "The bear is nice. The bear likes the tiger. The dog chases the tiger. The dog is kind. The dog is rough. The dog is round. The mouse chases the dog. The mouse chases the tiger. The mouse eats the dog. The tiger is rough. If someone is kind and round then they like the dog. If someone eats the mouse then the mouse eats the tiger. If someone eats the tiger and they chase the tiger then they eat the mouse. If the mouse does not chase the tiger then the tiger is nice. If someone likes the dog then they eat the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bear does not like the tiger.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "illegal character '¬' (rules.krb, line 23)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-308",
+    "context": "Anne is cold. Anne is young. Charlie is cold. Erin is big. Fiona is blue. Fiona is red. Fiona is smart. If something is big and young then it is smart. If something is big and red then it is young. All cold things are red. If something is green then it is cold. If Anne is blue and Anne is smart then Anne is young. All smart, young things are green. If something is red and big then it is young. If something is big then it is young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-699",
+    "context": "Anne is green. Anne is nice. Anne is smart. Anne is young. Erin is nice. Fiona is green. Fiona is red. Fiona is smart. Harry is blue. Harry is red. All blue people are kind. Green people are smart. If someone is blue and young then they are smart. All green people are young. If someone is nice then they are red. Nice, red people are blue. All kind people are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is green.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-324",
+    "context": "The bear chases the rabbit. The bear is young. The bear sees the cow. The cow sees the bear. The cow sees the rabbit. The rabbit is red. The squirrel chases the cow. If someone is kind then they visit the cow. If someone chases the squirrel then the squirrel visits the cow. Young people are kind. If someone visits the bear then they see the squirrel. If someone chases the squirrel then the squirrel visits the cow. If someone visits the rabbit then the rabbit visits the cow. If someone is young then they visit the rabbit. If someone visits the cow then the cow is young. If someone is red then they visit the squirrel.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit is not red.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-950",
+    "context": "Anne is white. Charlie is nice. Charlie is round. Fiona is big. Fiona is young. Harry is big. Harry is nice. If something is round and white then it is rough. All blue things are young. If something is blue and young then it is big. All rough things are big. All white things are round. All blue, young things are white. Rough, nice things are blue. All young, round things are blue. All rough things are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-755",
+    "context": "The bear eats the rabbit. The bear visits the cow. The cow eats the rabbit. The cow is rough. The cow is round. The cow visits the rabbit. The rabbit eats the cow. The squirrel eats the bear. The squirrel is round. The squirrel sees the bear. The squirrel sees the rabbit. If something is nice and it sees the squirrel then the squirrel visits the cow. If something is nice and it visits the squirrel then it sees the squirrel. If something sees the squirrel then the squirrel eats the bear. If something eats the squirrel then it is nice. If something sees the rabbit then it is rough. If something eats the rabbit and it is round then the rabbit sees the squirrel. If something visits the cow then it eats the squirrel. If something visits the rabbit then the rabbit is round. If something sees the bear then the bear visits the squirrel.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow is round.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "Invalid query: Round(cow)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-725",
+    "context": "Anne is cold. Anne is smart. Bob is big. Bob is rough. Erin is big. Erin is cold. Erin is kind. Erin is rough. Erin is smart. Erin is white. Erin is young. Harry is cold. Harry is kind. Harry is rough. Smart things are cold. If Erin is kind then Erin is young. White things are kind. If something is rough and kind then it is smart. If Anne is smart then Anne is white. All smart, cold things are kind. Big, cold things are young. If Bob is rough then Bob is white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-580",
+    "context": "Anne is blue. Anne is nice. Anne is quiet. Anne is red. Anne is smart. Dave is blue. Dave is kind. Dave is red. Dave is round. Gary is kind. Harry is quiet. Harry is red. Quiet things are round. Nice, kind things are smart. If something is smart and quiet then it is nice. All kind things are nice. All round, nice things are red. Blue things are red. Smart, nice things are quiet. If Dave is red and Dave is quiet then Dave is round. If Anne is not kind then Anne is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1103",
+    "context": "Bob is big. Bob is green. Bob is young. Fiona is big. Fiona is green. Fiona is red. Fiona is smart. Gary is red. Gary is smart. Harry is nice. Harry is red. Harry is smart. If something is red and big then it is young. If something is green and big then it is red. All smart, round things are big. Red things are nice. Big things are red. Big, young things are green. Smart, young things are round. If something is red and nice then it is round. All big things are smart.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is smart.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1331",
+    "context": "Bob is big. Dave is big. Dave is quiet. Dave is round. Fiona is round. Harry is kind. Harry is smart. Big people are kind. All kind, big people are round. If someone is smart then they are kind. If someone is green and smart then they are furry. If someone is quiet and furry then they are smart. Furry, big people are quiet. All smart, kind people are big. If someone is furry then they are big. Round people are furry.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-331",
+    "context": "Bob is kind. Bob is nice. Bob is white. Charlie is kind. Charlie is white. Erin is red. Erin is rough. Harry is blue. Harry is kind. Harry is red. Blue people are nice. All white people are red. If someone is white and blue then they are nice. All rough people are red. If someone is smart then they are blue. If someone is kind then they are red. If someone is nice then they are rough. If someone is red then they are smart. If someone is red and rough then they are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is white.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-520",
+    "context": "Bob is big. Charlie is blue. Charlie is quiet. Charlie is young. Dave is big. Dave is green. Dave is rough. Gary is big. Gary is furry. Gary is rough. Blue people are green. Quiet, big people are rough. Green, young people are furry. All furry, big people are quiet. All quiet, rough people are green. Blue, green people are young. Big people are blue. If someone is blue and green then they are big. If someone is quiet and rough then they are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is big.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-859",
+    "context": "Anne is cold. Anne is red. Anne is round. Anne is white. Bob is blue. Bob is cold. Bob is red. Bob is round. Charlie is cold. Erin is red. Furry people are big. Red, cold people are blue. If someone is big and not white then they are red. All white people are furry. If someone is cold then they are furry. If someone is big and not furry then they are round. Blue people are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not blue.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 17)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-492",
+    "context": "Anne is big. Anne is blue. Anne is kind. Anne is round. Charlie is green. Gary is kind. Harry is round. All blue things are rough. All white things are kind. If something is green and kind then it is round. If Anne is rough then Anne is big. All big things are blue. If something is green then it is blue. Blue things are big. If Anne is big and Anne is green then Anne is kind. Rough things are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1234",
+    "context": "Anne is rough. Charlie is green. Charlie is nice. Charlie is quiet. Fiona is green. Harry is nice. Harry is quiet. Round things are smart. If something is green then it is nice. All quiet, smart things are nice. If something is cold then it is nice. Cold things are rough. All smart things are rough. If something is green and nice then it is round. If something is cold then it is round. If something is rough then it is cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is nice.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-941",
+    "context": "The cat eats the cow. The cat sees the rabbit. The cow eats the cat. The lion is cold. The lion likes the cat. The lion sees the cat. The rabbit is blue. If someone is cold then they like the rabbit. If someone is cold then they like the cow. All blue people are round. If someone likes the rabbit then they eat the rabbit. If someone is round and they see the cow then the cow likes the rabbit. If someone eats the rabbit then the rabbit sees the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit is not blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1205",
+    "context": "Anne is blue. Anne is furry. Anne is red. Charlie is white. Gary is nice. Gary is rough. Harry is nice. Kind, white people are furry. All blue people are furry. Red people are blue. If someone is kind then they are furry. If Harry is nice and Harry is rough then Harry is red. White, rough people are kind. Blue, red people are white. Nice people are rough. If someone is kind and furry then they are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is red.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1284",
+    "context": "Anne is furry. Anne is nice. Anne is smart. Bob is young. Erin is nice. Harry is smart. Harry is young. Young things are furry. Nice, furry things are green. All green things are nice. Nice, green things are big. All green things are smart. If something is big and young then it is round. All green things are big. If Harry is young then Harry is furry. Furry, smart things are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is young.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1105",
+    "context": "Anne is big. Anne is blue. Anne is nice. Anne is red. Dave is big. Dave is nice. Dave is red. Dave is round. Fiona is big. Fiona is red. Gary is big. Gary is blue. Gary is nice. Gary is young. Blue, big people are young. If someone is rough then they are young. All red people are blue. All young people are blue. If someone is nice and rough then they are big. All round, nice people are big. All rough, big people are round. If someone is young then they are rough. All round people are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is not nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-817",
+    "context": "The cow chases the rabbit. The cow eats the tiger. The cow is green. The cow is red. The cow visits the mouse. The cow visits the rabbit. The cow visits the tiger. The mouse chases the tiger. The mouse is young. The rabbit eats the mouse. The rabbit is green. The rabbit is kind. The tiger chases the cow. The tiger eats the mouse. The tiger is green. The tiger visits the cow. If something visits the cow and it does not visit the rabbit then it is round. Red things are round. If something is red then it visits the tiger. If the mouse eats the tiger and the mouse is green then the tiger is red. If something is round and it does not visit the rabbit then it chases the rabbit. If the tiger is round and the tiger eats the mouse then the mouse is kind. If something is kind then it is red. If something visits the rabbit then it chases the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse visits the rabbit.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 4)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-481",
+    "context": "The bald eagle needs the mouse. The bald eagle visits the mouse. The dog is young. The dog needs the mouse. The dog visits the mouse. The mouse is red. The mouse is rough. The mouse visits the bald eagle. The tiger is cold. The tiger needs the bald eagle. The tiger needs the dog. The tiger visits the dog. If the mouse visits the dog then the mouse visits the tiger. If something needs the tiger and the tiger is cold then it is green. If something is cold and it needs the bald eagle then the bald eagle visits the mouse. If something needs the mouse then it visits the bald eagle. If something is young then it needs the tiger. If something visits the dog and the dog is green then it is young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle visits the mouse.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-412",
+    "context": "Dave is furry. Dave is green. Dave is quiet. Dave is red. Fiona is blue. Fiona is furry. Fiona is green. Fiona is quiet. Fiona is red. Gary is blue. Gary is nice. Gary is quiet. Gary is red. Gary is smart. Harry is blue. Harry is smart. If something is blue and furry then it is quiet. If Dave is furry then Dave is nice. If something is furry then it is blue. Quiet things are red. All furry, green things are quiet. If something is red then it is green. All nice things are furry. All smart things are nice. Red things are quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not red.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-824",
+    "context": "The dog chases the mouse. The dog is rough. The dog needs the rabbit. The dog needs the squirrel. The mouse is blue. The mouse likes the rabbit. The mouse likes the squirrel. The mouse needs the squirrel. The rabbit chases the squirrel. The rabbit is rough. The rabbit likes the squirrel. The rabbit needs the dog. The rabbit needs the squirrel. The squirrel needs the rabbit. If something likes the squirrel and the squirrel likes the dog then it likes the dog. If something needs the rabbit and it is not rough then it chases the dog. If something chases the dog and the dog does not chase the squirrel then it is red. If something is red and it needs the dog then the dog likes the squirrel. If something likes the dog then the dog likes the squirrel. If something likes the mouse then it likes the squirrel. If something is young and it needs the rabbit then the rabbit is cold. If something is red then it needs the mouse. If something needs the mouse then the mouse needs the rabbit.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog is cold.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 11)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-218",
+    "context": "The bald eagle chases the bear. The bald eagle is rough. The bald eagle sees the cat. The bear is kind. The bear is young. The bear likes the cat. The bear sees the cat. The bear sees the mouse. The cat chases the bald eagle. The cat is rough. The cat is young. The cat sees the mouse. The mouse is big. The mouse is young. The mouse likes the bear. The mouse sees the cat. If someone likes the mouse and the mouse is young then they are kind. If someone is rough then they are kind. If the cat is young and the cat chases the mouse then the cat likes the bear. If someone sees the cat and the cat sees the bear then they chase the bald eagle. If someone chases the cat then they like the cat. If someone chases the mouse and they see the mouse then the mouse sees the bald eagle. If someone likes the bear then they are big. If someone likes the cat then they see the bear. If someone chases the bald eagle then they chase the cat.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat chases the bald eagle.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-820",
+    "context": "Anne is round. Dave is big. Fiona is quiet. Fiona is young. Harry is furry. Harry is round. Harry is young. Round, quiet people are furry. If someone is smart then they are rough. If someone is smart and young then they are quiet. If Anne is round then Anne is smart. Smart people are young. Quiet people are round. Big people are smart. All young, quiet people are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not young.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-43",
+    "context": "Erin is rough. Erin is round. Erin is smart. Fiona is round. Gary is rough. Gary is smart. Harry is nice. If someone is smart and nice then they are green. If Erin is big and Erin is smart then Erin is blue. All round people are blue. All smart people are big. If someone is green then they are smart. All rough people are round. If someone is big then they are rough. If Harry is smart then Harry is big. Nice people are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-553",
+    "context": "Charlie is blue. Charlie is green. Charlie is white. Erin is kind. Fiona is kind. Fiona is smart. Harry is blue. Harry is green. Harry is kind. Harry is rough. Harry is smart. Kind, smart people are rough. If someone is rough then they are red. If someone is white and smart then they are red. All green people are white. If someone is red and not kind then they are smart. All kind people are smart. If someone is rough and red then they are green. If Erin is not rough then Erin is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is smart.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 23)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-242",
+    "context": "The bald eagle eats the squirrel. The bald eagle likes the cat. The cat is nice. The cat likes the bald eagle. The cow is red. The cow likes the cat. The cow sees the bald eagle. The cow sees the squirrel. The squirrel is cold. The squirrel sees the cow. If something eats the cow and the cow is not nice then it sees the squirrel. If something likes the squirrel and it sees the cat then the squirrel likes the cow. If something eats the squirrel and the squirrel eats the bald eagle then the bald eagle sees the cow. If the bald eagle eats the cat and the bald eagle does not like the cat then the cat is cold. If something is nice and it sees the squirrel then the squirrel is nice. If something is nice and not red then it eats the cow. If something is big and cold then it eats the cow. If something likes the squirrel and it eats the squirrel then it is green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow is not red.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1289",
+    "context": "Anne is blue. Anne is kind. Anne is quiet. Bob is quiet. Bob is red. Dave is kind. Dave is quiet. Dave is red. Dave is young. Erin is blue. Erin is quiet. Green things are red. If something is smart then it is young. If something is kind then it is young. If something is green and smart then it is young. If something is blue then it is smart. All blue things are smart. Red things are kind. If Erin is young then Erin is green. Young things are quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-379",
+    "context": "Anne is kind. Anne is nice. Bob is green. Bob is nice. Bob is quiet. Dave is green. Fiona is big. Fiona is blue. Fiona is green. Fiona is quiet. All green, young things are kind. If something is blue then it is kind. Big things are young. If Dave is young then Dave is nice. If something is blue and green then it is big. If something is blue and young then it is green. All blue, kind things are green. If something is young then it is quiet. All nice things are blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is kind.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-992",
+    "context": "The bear is nice. The bear likes the cat. The bear sees the dog. The cat eats the bear. The cat is cold. The cat sees the bear. The dog eats the bear. The dog eats the lion. The dog is blue. The dog sees the cat. The lion eats the cat. The lion is cold. The lion likes the bear. The lion likes the cat. If someone is big then they eat the dog. If someone is cold then they are nice. If someone is blue and they see the bear then they see the dog. If someone eats the dog then the dog is nice. If someone is blue and they see the dog then they are big. If someone eats the bear and they are nice then they are blue. If someone eats the bear and they see the dog then the dog is big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat is not cold.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-116",
+    "context": "The cow is young. The cow sees the lion. The dog likes the cow. The dog likes the rabbit. The dog sees the rabbit. The lion is young. The lion sees the cow. The lion sees the dog. The lion sees the rabbit. The rabbit is round. The rabbit likes the cow. If someone visits the rabbit then the rabbit likes the lion. If someone likes the rabbit and the rabbit is red then the rabbit is big. If someone likes the lion and they see the rabbit then the lion likes the rabbit. If someone is young then they like the rabbit. If someone is young then they see the lion. If the lion is big then the lion visits the dog. If the rabbit likes the lion then the rabbit is young. If someone is young and they like the rabbit then they visit the rabbit.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion is round.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-74",
+    "context": "The cat chases the squirrel. The cat likes the dog. The cat likes the squirrel. The cow is cold. The dog chases the cow. The dog visits the squirrel. The squirrel chases the dog. The squirrel is nice. The squirrel likes the dog. The squirrel visits the cow. If someone is nice and they chase the dog then the dog likes the cow. If someone is kind then they chase the cat. If someone chases the cat then the cat visits the squirrel. If someone visits the squirrel then they are kind. If someone visits the dog and the dog visits the cat then they are young. If someone visits the cat then the cat visits the cow. If someone is nice then they visit the dog. If someone chases the cat and they do not like the dog then the dog visits the squirrel.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat likes the squirrel.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 48)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1041",
+    "context": "Bob is cold. Bob is quiet. Bob is red. Bob is smart. Charlie is kind. Charlie is quiet. Charlie is red. Charlie is rough. Dave is cold. Dave is kind. Dave is smart. Fiona is quiet. If something is quiet and cold then it is smart. Red, cold things are round. If something is kind and rough then it is red. All quiet things are rough. Cold, smart things are red. If something is rough then it is cold. All red things are rough. If Dave is smart and Dave is kind then Dave is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is not smart.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-713",
+    "context": "Bob is furry. Charlie is furry. Charlie is red. Charlie is white. Gary is blue. Gary is cold. Gary is furry. Gary is white. Harry is blue. Harry is cold. Harry is smart. If Bob is blue and Bob is smart then Bob is cold. All white, blue things are quiet. If Gary is red then Gary is quiet. All smart things are red. All furry things are smart. If something is blue and cold then it is white. Quiet things are cold. If something is red then it is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not white.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-829",
+    "context": "The cow eats the lion. The cow eats the mouse. The cow is green. The cow visits the lion. The cow visits the mouse. The lion eats the cow. The lion eats the rabbit. The lion is big. The lion is green. The lion is round. The mouse eats the lion. The mouse is big. The mouse visits the cow. The rabbit is round. The rabbit needs the cow. The rabbit visits the lion. If someone eats the lion and the lion is green then they are blue. If someone visits the cow and they eat the rabbit then the rabbit is cold. If someone needs the mouse and the mouse needs the rabbit then the mouse needs the cow. If someone visits the cow and they are big then the cow visits the mouse. If someone is green and they need the rabbit then they eat the rabbit. If someone is blue then they eat the rabbit. All cold people are blue. If someone visits the cow then the cow is green. If someone eats the lion then they are cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit needs the cow.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-636",
+    "context": "The cat chases the mouse. The cat is cold. The cat likes the mouse. The cow chases the mouse. The cow is big. The lion is blue. The lion is cold. The lion is young. The lion visits the cat. The lion visits the mouse. The mouse is cold. The mouse likes the cat. The mouse likes the lion. The mouse visits the cat. If someone is big and they chase the lion then the lion likes the cat. If someone visits the cat and the cat chases the cow then they are kind. If someone chases the lion and the lion visits the cat then the cat is kind. If someone visits the cow then they visit the cat. If the cat chases the mouse then the mouse chases the lion. If someone is kind then they chase the lion. If someone chases the lion then they visit the cow. If someone is kind then they chase the cat.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse is not cold.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "Invalid query: Cold(mouse)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-778",
+    "context": "Anne is big. Anne is green. Anne is kind. Anne is young. Bob is blue. Bob is round. Dave is big. Dave is blue. Harry is kind. Harry is round. All young, big people are green. All big people are white. All round people are young. All kind people are round. If someone is green then they are kind. If Harry is blue then Harry is round. White people are kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-974",
+    "context": "Dave is cold. Dave is kind. Dave is quiet. Erin is green. Fiona is cold. Fiona is green. Fiona is quiet. Fiona is round. Gary is cold. Gary is kind. Gary is young. If someone is kind then they are cold. All green people are quiet. If Erin is green and Erin is cold then Erin is round. All cold, smart people are round. All quiet, kind people are green. Quiet people are kind. If Erin is round then Erin is young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is quiet.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1236",
+    "context": "Charlie is blue. Charlie is kind. Dave is big. Dave is cold. Dave is kind. Dave is red. Dave is round. Gary is rough. Gary is round. Harry is round. If someone is big and kind then they are cold. If someone is big then they are cold. If someone is round and red then they are kind. If Harry is blue and Harry is cold then Harry is round. If someone is kind then they are big. If someone is rough and blue then they are red. If someone is round then they are blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is not big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-241",
+    "context": "The bald eagle likes the lion. The bald eagle likes the mouse. The bald eagle likes the squirrel. The lion chases the squirrel. The lion likes the bald eagle. The mouse chases the lion. The squirrel eats the bald eagle. The squirrel eats the lion. The squirrel is cold. The squirrel is young. If the mouse eats the squirrel then the mouse eats the bald eagle. If someone eats the lion then they like the squirrel. If someone chases the lion and they are not red then the lion is green. If someone likes the mouse and they are young then the mouse eats the lion. If someone likes the squirrel then they like the mouse. If someone chases the lion and they are young then they eat the squirrel.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle is young.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-584",
+    "context": "The bald eagle chases the cat. The bald eagle is kind. The bald eagle needs the bear. The bald eagle visits the bear. The bear is red. The cat chases the dog. The cat is red. The cat needs the dog. The cat visits the bear. The dog needs the bald eagle. The dog needs the cat. The dog visits the cat. If someone visits the cat and the cat visits the dog then they are nice. If someone needs the bear then they are kind. If someone chases the bear then they visit the dog. If someone chases the cat then the cat chases the bear. If the dog is young and the dog chases the bald eagle then the dog needs the bear. If someone is nice then they chase the cat. If someone needs the bald eagle and the bald eagle chases the bear then they chase the dog. If someone chases the cat then the cat needs the bald eagle. If someone is nice and they visit the cat then the cat is nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat chases the dog.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-203",
+    "context": "Bob is nice. Bob is round. Bob is young. Dave is round. Erin is big. Erin is red. Gary is young. All round things are nice. All nice, big things are white. If something is big and white then it is round. Young things are nice. Big, red things are young. All nice things are quiet. All quiet things are big. Young, quiet things are red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not round.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-55",
+    "context": "Bob is round. Dave is blue. Dave is quiet. Dave is round. Erin is blue. Erin is furry. Erin is green. Erin is round. Erin is young. Harry is furry. Harry is green. Furry things are young. If something is round then it is kind. Furry, blue things are green. Quiet things are blue. If something is kind then it is quiet. All green, young things are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is furry.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-585",
+    "context": "Anne is round. Bob is red. Bob is smart. Erin is furry. Erin is red. Erin is rough. Erin is smart. Fiona is big. Fiona is furry. Fiona is smart. All smart things are furry. All furry things are red. All round things are rough. If Bob is white then Bob is furry. All red, rough things are big. All rough things are smart. If Fiona is furry then Fiona is red. If Bob is round and Bob is big then Bob is furry. If Fiona is red and Fiona is white then Fiona is smart.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is red.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-15",
+    "context": "The cat is cold. The cat is nice. The cat sees the cow. The cat sees the rabbit. The cow eats the rabbit. The cow is red. The cow likes the squirrel. The cow sees the cat. The rabbit eats the cat. The rabbit eats the squirrel. The rabbit is cold. The squirrel eats the cow. The squirrel likes the cow. The squirrel sees the cat. If someone is nice and red then they eat the cow. If the cow is cold and the cow likes the rabbit then the cow eats the cat. If someone sees the cat and they eat the cat then the cat likes the rabbit. If someone likes the cow then the cow likes the rabbit. If someone eats the cat then they are rough. If someone eats the squirrel and they do not like the cat then the cat likes the squirrel. If someone eats the cow and the cow is rough then they are green. If someone sees the cow and the cow likes the rabbit then the cow is cold. If the cow is red then the cow eats the rabbit.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow does not eat the rabbit.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 37)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-111",
+    "context": "Bob is big. Bob is blue. Bob is cold. Bob is white. Dave is cold. Dave is kind. Dave is nice. Gary is cold. Gary is kind. Harry is white. All white things are blue. All big, kind things are nice. If something is nice then it is big. If something is kind then it is nice. If something is rough then it is white. If something is big and nice then it is rough. All white, blue things are cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-673",
+    "context": "Charlie is kind. Charlie is quiet. Erin is blue. Erin is green. Erin is red. Erin is rough. Erin is round. Fiona is quiet. Harry is blue. Harry is green. Harry is quiet. Harry is red. Round, green things are rough. Red things are round. If something is quiet then it is kind. Blue, rough things are green. Round things are blue. If something is rough then it is red. All kind things are green. If something is blue then it is rough. If something is quiet and green then it is rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is quiet.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-76",
+    "context": "The bear eats the cow. The bear is blue. The cow eats the squirrel. The cow is young. The cow visits the lion. The lion is red. The lion is young. The lion visits the cow. The squirrel sees the bear. The squirrel visits the bear. If something sees the cow and the cow eats the squirrel then the cow is red. If the cow eats the bear and the bear sees the cow then the bear is blue. If something is blue and it sees the squirrel then the squirrel is round. If something sees the squirrel then the squirrel eats the cow. If the lion sees the cow and the cow visits the squirrel then the cow eats the squirrel. If something is red then it eats the lion. If the bear visits the squirrel and the bear is round then the bear sees the cow. If something eats the lion then it sees the cow. If something is young and cold then it eats the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow does not visit the lion.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-777",
+    "context": "The bear is kind. The bear likes the cat. The cat likes the bear. The cat needs the cow. The cat sees the bear. The cat sees the cow. The cow is rough. The mouse likes the cat. The mouse needs the bear. The mouse sees the cow. If someone sees the bear then they need the mouse. If someone needs the bear and the bear needs the cow then the bear needs the cat. If someone likes the cow then the cow sees the bear. If the bear is red and the bear needs the cow then the cow needs the bear. If someone needs the mouse then they are big. If someone sees the bear and they are big then they like the cow. If the cat needs the mouse then the mouse needs the cow. If someone is kind then they see the cat.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bear is red.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-336",
+    "context": "The bald eagle eats the bear. The bald eagle eats the cat. The bald eagle eats the rabbit. The bald eagle is young. The bald eagle likes the bear. The bald eagle sees the cat. The bald eagle sees the rabbit. The bear eats the bald eagle. The cat eats the bald eagle. The cat likes the rabbit. The rabbit is round. The rabbit sees the bald eagle. If someone eats the bald eagle and they see the rabbit then they are round. If someone eats the bald eagle and they eat the rabbit then the rabbit likes the cat. If someone is young and they eat the rabbit then the rabbit sees the cat. If someone eats the rabbit and the rabbit is cold then they are blue. If the rabbit sees the cat and the rabbit is round then the cat eats the rabbit. If the bald eagle sees the bear and the bald eagle likes the bear then the bald eagle is red. If someone eats the rabbit and they are blue then they eat the bald eagle. If someone likes the cat then the cat is round. If the rabbit likes the cat and the cat is round then the rabbit is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle eats the cat.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-769",
+    "context": "Bob is green. Fiona is cold. Fiona is furry. Fiona is smart. Gary is big. Gary is blue. Gary is cold. Gary is green. Gary is kind. Gary is smart. Harry is blue. If someone is cold then they are furry. Green people are cold. Blue people are big. Blue people are kind. Kind, big people are smart. Green, furry people are blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is not cold.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-649",
+    "context": "The bald eagle is nice. The bald eagle is rough. The bald eagle needs the mouse. The bald eagle needs the squirrel. The mouse is kind. The mouse is young. The mouse likes the tiger. The mouse sees the bald eagle. The squirrel is kind. The squirrel is nice. The squirrel needs the bald eagle. The tiger is kind. If someone likes the bald eagle then they are rough. If someone is blue and they see the tiger then the tiger needs the squirrel. If the mouse needs the bald eagle and the bald eagle likes the mouse then the bald eagle is rough. If the mouse needs the squirrel then the squirrel likes the mouse. If someone is rough then they see the mouse. If someone needs the tiger and the tiger is kind then they like the bald eagle. If someone sees the mouse then they need the squirrel. If someone needs the squirrel and the squirrel is nice then the squirrel needs the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger sees the bald eagle.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-522",
+    "context": "Dave is green. Dave is red. Erin is green. Erin is kind. Erin is rough. Gary is big. Gary is green. Gary is red. Gary is rough. Harry is furry. Harry is kind. Harry is rough. If someone is rough then they are furry. If someone is red then they are furry. If someone is green and rough then they are smart. All smart, red people are kind. If someone is furry then they are big. If someone is red and big then they are green. If someone is furry and big then they are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is green.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-251",
+    "context": "Anne is nice. Anne is smart. Bob is round. Gary is big. Gary is smart. Harry is rough. Harry is smart. All young people are cold. All smart, big people are rough. If someone is big then they are young. If someone is round then they are big. All cold, round people are big. If someone is nice and round then they are smart. If Bob is young and Bob is big then Bob is nice. If Bob is nice and Bob is cold then Bob is young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is not nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-873",
+    "context": "The bald eagle is green. The bald eagle likes the squirrel. The bald eagle likes the tiger. The bear is nice. The bear is round. The bear likes the bald eagle. The bear likes the tiger. The squirrel is young. The squirrel likes the bear. The squirrel needs the bald eagle. The squirrel sees the tiger. The tiger is cold. The tiger likes the bear. The tiger likes the squirrel. The tiger needs the bear. The tiger sees the bear. If something needs the bald eagle and the bald eagle likes the bear then the bald eagle needs the tiger. If something needs the squirrel then it needs the tiger. If something is green then it needs the squirrel. If something needs the bear and it needs the bald eagle then the bear likes the bald eagle. If something likes the bald eagle then it is young. If something likes the bear and it sees the bald eagle then it needs the bear. Round things are green. If something sees the squirrel and the squirrel likes the bear then it is cold. If something needs the bear and the bear is green then it is round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bear needs the bald eagle.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-369",
+    "context": "The cow chases the lion. The cow chases the squirrel. The cow eats the rabbit. The cow is nice. The cow likes the rabbit. The cow likes the squirrel. The lion chases the rabbit. The lion eats the rabbit. The lion likes the squirrel. The rabbit chases the squirrel. The rabbit is blue. The rabbit is nice. The rabbit likes the lion. The squirrel eats the cow. The squirrel eats the lion. The squirrel is rough. If something is nice and it eats the cow then it is kind. If something chases the squirrel then it eats the lion. If something likes the lion and it likes the rabbit then the lion chases the squirrel. If something chases the squirrel and the squirrel is nice then the squirrel is kind. If something likes the squirrel and the squirrel likes the cow then the cow likes the squirrel. If something eats the lion then it likes the rabbit.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow chases the squirrel.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-364",
+    "context": "The cat needs the lion. The cat visits the cow. The cat visits the dog. The cow needs the lion. The cow visits the dog. The dog chases the cow. The dog needs the cow. The dog visits the lion. The lion chases the cat. The lion is young. The lion needs the cow. If someone chases the cow and the cow does not chase the lion then the lion visits the cat. If someone is nice then they need the cow. If someone is rough and not blue then they visit the dog. If someone needs the cat and they are nice then they visit the lion. If someone visits the cat then the cat is nice. If someone chases the cow then they need the cat. If someone chases the lion and the lion visits the cat then the cat visits the lion. If someone is nice then they chase the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow does not need the lion.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 4)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-924",
+    "context": "The bald eagle chases the tiger. The lion likes the squirrel. The squirrel needs the bald eagle. The tiger is blue. The tiger likes the lion. The tiger likes the squirrel. The tiger needs the lion. If someone likes the tiger then the tiger chases the squirrel. If someone chases the bald eagle then they are nice. If someone needs the squirrel and they are cold then they need the bald eagle. If someone chases the lion then the lion is nice. If someone needs the squirrel then the squirrel likes the tiger. If someone is cold then they are kind. If the lion is cold then the lion needs the tiger. If someone is nice then they need the squirrel. If someone is blue then they chase the lion.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle likes the lion.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-4",
+    "context": "The bald eagle is big. The bald eagle is nice. The cat is nice. The cat needs the tiger. The cat visits the bald eagle. The cat visits the rabbit. The rabbit eats the bald eagle. The rabbit eats the cat. The rabbit needs the tiger. The rabbit visits the cat. The rabbit visits the tiger. The tiger eats the cat. The tiger is cold. The tiger is round. If someone eats the cat then they visit the bald eagle. If someone is kind and they eat the cat then the cat needs the tiger. If the cat eats the tiger and the tiger needs the bald eagle then the tiger visits the bald eagle. If the bald eagle needs the rabbit and the rabbit eats the cat then the rabbit needs the bald eagle. If someone needs the tiger and the tiger needs the rabbit then they are kind. If someone visits the bald eagle then they are cold. If the tiger eats the cat then the tiger is big. If someone eats the bald eagle and they are cold then the bald eagle eats the cat.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is cold.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-251",
+    "context": "The cat is nice. The cat needs the lion. The cat visits the lion. The cow is nice. The cow needs the cat. The lion is nice. The lion is red. The lion is young. The lion needs the cow. The lion needs the squirrel. The squirrel is young. If the cow needs the lion then the lion visits the squirrel. If something needs the squirrel then it visits the cat. If something needs the cow and it chases the squirrel then the cow is rough. If something chases the squirrel and it is young then the squirrel needs the cat. If something visits the cow then it is rough. If the squirrel visits the cat and the cat is red then the squirrel chases the cow. All nice things are big. If something is big then it visits the squirrel. If something visits the cat and the cat visits the squirrel then the squirrel is nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion does not need the squirrel.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-659",
+    "context": "The bear eats the dog. The bear is young. The bear likes the rabbit. The dog is cold. The dog likes the bear. The rabbit eats the squirrel. The rabbit likes the bear. The rabbit likes the squirrel. The squirrel chases the bear. The squirrel eats the bear. The squirrel eats the dog. The squirrel likes the bear. The squirrel likes the dog. The squirrel likes the rabbit. If someone is kind then they eat the rabbit. If someone likes the dog then they are kind. If someone is red then they eat the squirrel. If the bear is not red then the bear chases the dog. If someone is cold and they do not like the rabbit then the rabbit is young. If the squirrel likes the rabbit then the squirrel is nice. If the squirrel eats the rabbit then the rabbit likes the dog. If the squirrel eats the rabbit then the squirrel likes the bear. If someone eats the dog and they are not nice then the dog chases the rabbit.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bear is nice.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "illegal character '¬' (rules.krb, line 21)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-329",
+    "context": "Anne is blue. Anne is kind. Anne is nice. Anne is red. Bob is smart. Fiona is cold. Fiona is kind. Harry is blue. Harry is cold. Harry is green. Harry is kind. Harry is red. All red things are cold. If something is blue and green then it is nice. If something is smart and cold then it is kind. All green things are blue. If something is smart and blue then it is nice. If Bob is nice then Bob is cold. If something is smart then it is green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is cold.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-517",
+    "context": "The bald eagle is green. The bald eagle is red. The cat chases the lion. The cat sees the tiger. The cat visits the bald eagle. The cat visits the lion. The lion chases the cat. The lion is red. The lion sees the bald eagle. The lion sees the cat. The tiger chases the cat. The tiger sees the cat. The tiger visits the bald eagle. The tiger visits the lion. If something sees the lion and it sees the bald eagle then it chases the cat. If something chases the cat then it is young. If something visits the tiger and the tiger sees the cat then it sees the lion. If something visits the tiger and the tiger visits the lion then it sees the bald eagle. If the lion sees the bald eagle then the bald eagle visits the tiger. If something is young then it visits the lion.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger does not see the cat.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1164",
+    "context": "Bob is big. Bob is blue. Bob is cold. Bob is quiet. Bob is rough. Bob is smart. Bob is white. Dave is rough. Fiona is blue. Harry is big. Harry is cold. If someone is blue then they are cold. If someone is big then they are white. If Bob is rough and Bob is blue then Bob is big. All blue, smart people are big. If someone is blue and rough then they are quiet. All smart people are blue. Cold people are rough. If someone is quiet then they are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is smart.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-953",
+    "context": "The bald eagle chases the rabbit. The bald eagle is big. The bald eagle is green. The mouse chases the bald eagle. The mouse likes the rabbit. The rabbit is rough. The rabbit likes the mouse. The squirrel is big. The squirrel likes the bald eagle. The squirrel needs the rabbit. If something needs the mouse then the mouse is big. If something is rough then it chases the mouse. If something chases the mouse then the mouse chases the squirrel. If something is green and it chases the mouse then the mouse chases the rabbit. All big things are rough. If something chases the mouse and the mouse chases the rabbit then the rabbit needs the mouse. If something likes the rabbit and the rabbit is cold then it likes the squirrel. If something likes the bald eagle and the bald eagle needs the rabbit then the bald eagle chases the mouse. If something is green and it likes the bald eagle then it likes the rabbit.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle is green.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-136",
+    "context": "The bald eagle is rough. The bear eats the dog. The bear is big. The bear needs the dog. The bear sees the cat. The bear sees the dog. The cat eats the dog. The dog is nice. The dog is rough. The dog needs the bear. The dog needs the cat. The dog sees the bald eagle. If something eats the bear then the bear eats the bald eagle. If something needs the cat then the cat eats the bald eagle. If something sees the cat and the cat is green then the cat eats the bear. If something eats the bear and it eats the dog then the bear is rough. If something eats the bald eagle then it is green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat does not eat the dog.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-398",
+    "context": "The bald eagle is blue. The bald eagle is cold. The bald eagle needs the rabbit. The bear visits the lion. The lion is nice. The lion likes the bald eagle. The lion needs the bald eagle. The lion needs the rabbit. The lion visits the rabbit. The rabbit likes the bear. The rabbit needs the bald eagle. The rabbit needs the lion. The rabbit visits the bald eagle. The rabbit visits the bear. If someone visits the rabbit then they need the bear. If someone needs the rabbit then the rabbit likes the bear. If someone visits the bear and the bear needs the rabbit then they need the bear. If someone needs the bear then they need the rabbit. If the bear needs the lion and the bear likes the bald eagle then the bear visits the bald eagle. If someone is blue and they like the bald eagle then the bald eagle needs the rabbit. If someone likes the bear then the bear visits the rabbit. If the bald eagle likes the rabbit and the bald eagle visits the rabbit then the bald eagle needs the bear. If the rabbit likes the bear then the bear visits the bald eagle.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bald eagle needs the bald eagle.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-385",
+    "context": "Anne is blue. Anne is smart. Charlie is cold. Charlie is kind. Charlie is round. Charlie is smart. Charlie is white. Erin is blue. Erin is kind. Gary is kind. If someone is blue and cold then they are white. If someone is round then they are cold. Cold, kind people are quiet. Smart people are quiet. If Anne is kind and Anne is white then Anne is smart. If someone is smart and blue then they are kind. All blue, kind people are smart. Quiet, blue people are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is blue.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-667",
+    "context": "The bear sees the cow. The bear sees the rabbit. The cow chases the rabbit. The cow visits the rabbit. The mouse is big. The mouse is blue. The rabbit chases the mouse. If something sees the rabbit and it chases the mouse then the mouse is rough. If something chases the rabbit and it visits the mouse then the rabbit sees the cow. If something sees the cow then the cow visits the mouse. If something visits the bear then the bear sees the cow. If something is rough then it visits the bear. If something visits the cow and it is blue then it sees the mouse. If something is nice and it sees the bear then the bear is blue. If something sees the cow then it sees the rabbit. If something chases the mouse then the mouse visits the cow.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow does not visit the rabbit.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "Invalid query: ¬Visits(cow, rabbit)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-232",
+    "context": "Anne is blue. Charlie is blue. Charlie is green. Charlie is smart. Fiona is big. Fiona is blue. Fiona is furry. Fiona is green. Fiona is quiet. Gary is rough. Gary is smart. All blue things are quiet. If Anne is green then Anne is quiet. All rough, blue things are smart. All blue, quiet things are furry. If something is furry then it is blue. Furry things are rough. Smart things are big. Rough things are quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-990",
+    "context": "Bob is nice. Bob is red. Bob is young. Charlie is big. Charlie is blue. Charlie is kind. Charlie is nice. Charlie is red. Charlie is round. Charlie is young. Erin is kind. Erin is nice. Erin is round. Erin is young. Gary is blue. Gary is round. Round things are big. All red, young things are kind. If something is kind then it is blue. Big things are red. If something is red and nice then it is young. If something is red and blue then it is nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Charlie is round.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-694",
+    "context": "Bob is quiet. Charlie is big. Charlie is cold. Fiona is blue. Fiona is rough. Fiona is round. Gary is rough. All quiet people are big. If Bob is not blue then Bob is quiet. If someone is round and furry then they are cold. Rough people are furry. If someone is furry then they are quiet. All big people are rough. If someone is big then they are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not round.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-365",
+    "context": "Anne is cold. Anne is green. Anne is quiet. Anne is smart. Anne is young. Charlie is smart. Erin is quiet. Erin is red. Erin is young. Fiona is green. Fiona is smart. Fiona is young. If something is green and quiet then it is young. All quiet, green things are cold. If something is smart then it is red. If something is red and nice then it is quiet. If Charlie is quiet then Charlie is cold. If Anne is green and Anne is cold then Anne is red. All smart, quiet things are green. Red things are quiet. Young things are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is green.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-56",
+    "context": "The cat is red. The cat sees the tiger. The cat visits the tiger. The lion is kind. The lion needs the tiger. The lion sees the cat. The lion visits the cat. The lion visits the mouse. The mouse is big. The mouse visits the cat. The tiger needs the lion. The tiger needs the mouse. If someone visits the cat then they visit the tiger. If someone needs the mouse then the mouse visits the tiger. If someone is big then they need the cat. If the mouse is big and the mouse does not see the lion then the mouse needs the lion. If someone is kind and they see the cat then they need the mouse. If someone sees the cat and the cat needs the tiger then they visit the lion. Kind people are big. If someone needs the cat then the cat needs the lion. If the cat needs the lion and the cat does not need the tiger then the cat is kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger needs the lion.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 22)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-438",
+    "context": "The bald eagle is blue. The bear eats the rabbit. The bear likes the bald eagle. The bear likes the rabbit. The bear likes the squirrel. The rabbit eats the squirrel. The rabbit likes the bear. The squirrel eats the bear. The squirrel is blue. The squirrel sees the bald eagle. If something is big and cold then it eats the bear. If something sees the rabbit and it likes the squirrel then it sees the bear. If the squirrel is big then the squirrel sees the bear. If something likes the rabbit then it sees the rabbit. If something eats the rabbit then it sees the rabbit. If something likes the bald eagle and it is blue then the bald eagle eats the rabbit. If something sees the rabbit then the rabbit sees the squirrel. If something sees the bald eagle then it is big. If something sees the bear then the bear is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bear does not like the rabbit.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-365",
+    "context": "The bald eagle likes the cow. The cow is kind. The cow is round. The cow sees the dog. The cow sees the lion. The cow visits the lion. The dog is nice. The dog sees the bald eagle. The dog visits the lion. The lion likes the bald eagle. If something likes the dog and it is nice then it is kind. Kind things are round. If something is nice then it visits the dog. If something likes the cow then it is nice. If something is kind then it visits the bald eagle. If something is round and it likes the dog then the dog is rough. If something visits the lion and it visits the dog then it likes the dog.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cow likes the lion.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1110",
+    "context": "Bob is blue. Bob is cold. Bob is nice. Bob is round. Bob is smart. Bob is white. Dave is cold. Dave is white. Erin is blue. Erin is cold. Erin is nice. Erin is round. Erin is smart. Fiona is blue. Fiona is nice. Fiona is smart. White people are nice. All rough people are smart. If someone is blue and rough then they are smart. All nice, rough people are smart. If someone is nice and round then they are rough. White, smart people are blue. All blue people are nice. Nice people are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is round.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-1036",
+    "context": "The bear eats the squirrel. The bear is cold. The bear is rough. The bear visits the lion. The cat eats the lion. The lion likes the cat. The lion visits the bear. The squirrel eats the lion. The squirrel is cold. The squirrel is rough. The squirrel likes the bear. The squirrel visits the lion. Red people are green. If someone eats the lion then the lion is red. If someone is green and they like the lion then they eat the bear. If someone visits the bear then the bear likes the lion. If someone likes the squirrel and they like the lion then they visit the lion. If someone is green then they eat the squirrel. If someone likes the lion then they visit the bear. If someone visits the lion and the lion is green then they are red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The squirrel is not rough.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-341",
+    "context": "The bald eagle is cold. The bald eagle is nice. The bald eagle likes the cow. The bald eagle likes the tiger. The bald eagle sees the cow. The bald eagle sees the dog. The bald eagle sees the tiger. The bald eagle visits the cow. The cow is young. The cow visits the bald eagle. The dog sees the bald eagle. The dog visits the tiger. The tiger is blue. The tiger is cold. The tiger is young. The tiger visits the cow. If something is big and it visits the bald eagle then it visits the cow. If something likes the tiger and the tiger is big then it is big. If something visits the cow and the cow is young then it is big. If something visits the tiger then it is young. If the tiger likes the dog then the tiger visits the bald eagle. If something is big then it visits the dog. If something visits the dog then it is cold. If something is young then it likes the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger likes the bald eagle.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-768",
+    "context": "The bald eagle is red. The bald eagle needs the bear. The bear is red. The bear sees the squirrel. The rabbit is cold. The rabbit needs the squirrel. The squirrel is round. If something is round then it is red. If something is red then it visits the rabbit. If something sees the bald eagle then it is round. If something visits the rabbit then the rabbit is round. If the bald eagle sees the rabbit then the bald eagle visits the rabbit. If something is green then it needs the bear. If something sees the bear and the bear needs the rabbit then the bear is cold. If something sees the bear and it is kind then it needs the bear. All red things are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The bear sees the squirrel.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-193",
+    "context": "Bob is green. Bob is white. Charlie is blue. Charlie is quiet. Dave is white. Fiona is blue. Fiona is furry. All blue things are quiet. If something is green and furry then it is quiet. All white things are rough. Quiet things are rough. If Dave is rough then Dave is furry. If something is quiet then it is green. If something is furry then it is blue. All white, cold things are furry. If something is furry and cold then it is white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not furry.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-993",
+    "context": "The bald eagle likes the rabbit. The bald eagle needs the dog. The bald eagle needs the rabbit. The bald eagle visits the rabbit. The bald eagle visits the squirrel. The dog is blue. The dog likes the squirrel. The dog needs the rabbit. The rabbit likes the dog. The rabbit needs the bald eagle. The rabbit visits the dog. The squirrel is blue. The squirrel is cold. The squirrel likes the bald eagle. If something likes the squirrel then it visits the squirrel. If something visits the squirrel then it likes the bald eagle. If something needs the bald eagle then it likes the rabbit. If the dog likes the rabbit then the rabbit likes the squirrel. If something visits the dog then the dog needs the bald eagle.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog visits the rabbit.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1053",
+    "context": "Bob is nice. Dave is big. Dave is round. Fiona is cold. Fiona is nice. Fiona is smart. Harry is cold. If Bob is quiet then Bob is big. All round people are smart. If someone is big and smart then they are nice. If someone is big and not kind then they are quiet. If someone is cold then they are quiet. If someone is quiet and cold then they are big. If Harry is big and Harry is quiet then Harry is round. If Fiona is not round then Fiona is quiet. All quiet people are cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is nice.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 23)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-836",
+    "context": "Anne is young. Bob is red. Bob is rough. Erin is green. Erin is kind. Gary is kind. Gary is round. If Anne is red and Anne is young then Anne is quiet. Round things are kind. If something is green and red then it is rough. If something is round then it is quiet. If something is young then it is round. Kind, red things are young. All red, round things are young. If something is round and quiet then it is green. All red, rough things are kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-402",
+    "context": "Bob is nice. Bob is white. Charlie is round. Charlie is white. Erin is furry. Erin is nice. Gary is young. All furry, nice things are young. If something is red then it is furry. All furry things are red. All nice things are red. Round, kind things are nice. All young, furry things are kind. If something is white and round then it is furry. If something is red and round then it is young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is round.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1280",
+    "context": "Erin is blue. Erin is white. Fiona is furry. Gary is blue. Gary is green. Gary is nice. Gary is smart. Harry is furry. Harry is green. Harry is nice. Harry is rough. Harry is smart. If Erin is rough then Erin is smart. All furry, nice things are green. If Fiona is furry and Fiona is green then Fiona is white. If something is white then it is rough. If Gary is green then Gary is furry. Smart, blue things are nice. All nice, blue things are furry. If something is green and nice then it is white. Nice, furry things are blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is blue.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-488",
+    "context": "Anne is big. Bob is big. Bob is furry. Bob is nice. Bob is rough. Bob is white. Bob is young. Erin is blue. Harry is nice. Harry is rough. Harry is white. Harry is young. If something is big then it is furry. If Erin is furry and Erin is white then Erin is blue. If something is furry and big then it is nice. If something is big then it is furry. If something is white and nice then it is rough. Furry, nice things are young. Furry, young things are white. All big, blue things are white. Young, blue things are nice.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not young.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1087",
+    "context": "Bob is blue. Dave is green. Dave is rough. Fiona is green. Fiona is white. Gary is green. Gary is white. Young, round people are furry. All green, young people are furry. If Bob is blue and Bob is white then Bob is young. If Fiona is green then Fiona is rough. Young, blue people are green. If someone is blue then they are white. Furry people are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is young.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-327",
+    "context": "Anne is cold. Anne is furry. Anne is rough. Anne is smart. Anne is white. Bob is nice. Bob is rough. Erin is cold. Erin is furry. Erin is nice. Erin is rough. Erin is smart. Erin is white. Erin is young. Fiona is cold. Fiona is furry. All smart things are cold. If Bob is young and Bob is cold then Bob is furry. Young things are cold. If Fiona is rough and Fiona is cold then Fiona is smart. Cold, furry things are white. All rough, nice things are young. If something is white and furry then it is smart.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is rough.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-143",
+    "context": "Anne is round. Bob is blue. Bob is kind. Bob is red. Dave is big. Dave is kind. Dave is smart. Fiona is big. Fiona is red. Fiona is rough. Fiona is round. If Bob is round and Bob is red then Bob is rough. Big people are kind. All blue people are big. All round people are blue. All smart, red people are kind. All kind people are rough. All rough, big people are smart. Round, smart people are blue. If Fiona is smart and Fiona is red then Fiona is big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-999",
+    "context": "Anne is big. Anne is furry. Bob is blue. Bob is green. Bob is young. Charlie is furry. Charlie is green. Charlie is red. Gary is furry. Gary is green. Gary is young. Furry, green things are blue. All big things are green. Red, furry things are blue. All big, blue things are nice. If Bob is nice and Bob is big then Bob is red. If Gary is furry then Gary is blue. All nice, big things are young. All nice things are young. Blue, young things are red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-754",
+    "context": "The cat is big. The cat is nice. The cat sees the dog. The cat visits the dog. The dog is big. The dog is nice. The mouse is nice. The mouse is red. The tiger eats the cat. The tiger eats the dog. The tiger visits the mouse. If someone visits the tiger then the tiger sees the mouse. If the cat eats the dog and the cat sees the dog then the cat is big. If someone eats the dog then they visit the cat. If the tiger is young and the tiger is nice then the tiger eats the mouse. If someone sees the mouse and the mouse is red then the mouse visits the tiger. If someone visits the tiger then they visit the cat. If someone visits the cat and the cat visits the dog then the dog visits the tiger. If the cat sees the tiger then the cat eats the dog.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger visits the mouse.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-648",
+    "context": "The bald eagle chases the tiger. The bald eagle needs the cat. The cat chases the bald eagle. The cat chases the tiger. The cat needs the cow. The cat needs the tiger. The cow chases the tiger. The cow is young. The cow needs the tiger. The tiger is kind. The tiger is round. The tiger visits the cow. If someone needs the bald eagle and the bald eagle chases the tiger then the tiger is young. If someone chases the cat then they need the cow. If the bald eagle does not chase the cat and the bald eagle does not chase the tiger then the bald eagle is blue. If someone visits the cat then they visit the bald eagle. If someone visits the bald eagle then the bald eagle needs the cow. If someone needs the cow then they visit the cat. If someone is round and they do not need the cat then they visit the tiger. If someone visits the bald eagle then they are blue. If the cow needs the cat then the cow needs the bald eagle.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is not round.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1239",
+    "context": "Anne is nice. Anne is round. Anne is smart. Bob is green. Bob is round. Dave is green. Dave is round. Dave is white. Dave is young. Fiona is green. Fiona is nice. Fiona is round. Fiona is smart. Fiona is young. If Bob is white then Bob is smart. Young people are furry. All round, green people are furry. All round, young people are white. If someone is green and furry then they are nice. If someone is round and furry then they are nice. Nice people are young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is smart.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-334",
+    "context": "Charlie is big. Charlie is cold. Charlie is green. Charlie is kind. Charlie is nice. Charlie is rough. Fiona is big. Fiona is blue. Fiona is cold. Fiona is green. Fiona is kind. Fiona is nice. Gary is big. Harry is green. If Harry is kind then Harry is cold. If someone is big and cold then they are nice. Green, big people are nice. If someone is nice then they are cold. All rough people are big. All nice people are kind. All green people are kind. If Gary is blue then Gary is green. If someone is cold then they are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is big.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-946",
+    "context": "Anne is rough. Anne is white. Erin is big. Erin is rough. Erin is round. Erin is smart. Fiona is white. Gary is big. Gary is rough. Gary is white. If someone is kind and not white then they are rough. If someone is kind then they are rough. If someone is white and not big then they are smart. Kind, big people are furry. Kind, rough people are furry. If Erin is rough then Erin is kind. If Erin is white and Erin is rough then Erin is round. If someone is round then they are kind. If someone is smart then they are round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is not rough.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 4)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-979",
+    "context": "Bob is big. Bob is red. Dave is furry. Dave is kind. Erin is cold. Fiona is kind. Fiona is quiet. All quiet things are cold. If Bob is quiet then Bob is round. Quiet things are round. If something is kind then it is round. All furry, red things are big. If Fiona is quiet and Fiona is red then Fiona is kind. If something is cold then it is red. If something is furry and round then it is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-754",
+    "context": "Anne is big. Anne is furry. Anne is rough. Anne is round. Anne is young. Charlie is big. Charlie is cold. Dave is furry. Dave is young. Harry is furry. Harry is nice. Harry is young. All round things are cold. Cold, furry things are rough. If something is furry and rough then it is round. If Charlie is round and Charlie is furry then Charlie is nice. All round, nice things are rough. Big, cold things are furry. Furry, round things are cold. Nice, round things are young.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is rough.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-334",
+    "context": "The bear is round. The bear is young. The bear needs the dog. The bear sees the cat. The cat eats the bear. The cat is green. The cat needs the mouse. The dog eats the cat. The dog is cold. The dog is green. The dog needs the cat. The dog sees the bear. The mouse eats the dog. The mouse is cold. The mouse needs the bear. The mouse needs the dog. If something eats the mouse then it needs the dog. If the mouse sees the bear then the bear needs the mouse. If something eats the dog and the dog eats the bear then it needs the bear. If something is round and it eats the bear then it sees the bear. If something eats the bear then it is round. If something eats the dog and it needs the cat then it eats the bear. If something needs the mouse then the mouse needs the cat.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse does not eat the dog.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-814",
+    "context": "The cat is kind. The cat sees the tiger. The lion is green. The mouse needs the cat. The mouse sees the cat. The tiger is blue. The tiger is red. If someone sees the mouse and the mouse sees the tiger then the mouse needs the lion. If the mouse likes the lion and the lion sees the cat then the mouse needs the lion. If the lion is not red and the lion does not need the mouse then the mouse is blue. If someone is green and not rough then they see the mouse. If someone is blue and not kind then they like the tiger. If someone needs the tiger and they are green then the tiger is green. If someone sees the mouse then they need the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is kind.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 17)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1332",
+    "context": "Bob is big. Bob is blue. Bob is nice. Bob is round. Erin is smart. Fiona is nice. Fiona is rough. Fiona is smart. Gary is rough. Gary is round. Gary is smart. If Bob is smart and Bob is furry then Bob is big. If Gary is rough then Gary is nice. If someone is blue then they are furry. Smart people are nice. If someone is furry then they are smart. Round people are smart. If Erin is nice then Erin is blue. If Erin is big and Erin is nice then Erin is round. All furry, blue people are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is rough.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-908",
+    "context": "Bob is rough. Bob is white. Charlie is smart. Dave is smart. Fiona is big. Fiona is smart. Fiona is white. If Dave is white then Dave is quiet. All red things are white. If something is big and white then it is furry. If something is smart then it is red. Rough, smart things are red. If something is red and white then it is rough. Rough things are big. If something is furry and rough then it is smart. If Charlie is white and Charlie is not rough then Charlie is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not rough.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 56)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-725",
+    "context": "The bald eagle is big. The cow is blue. The cow is cold. The cow likes the bald eagle. The cow likes the mouse. The dog is big. The mouse likes the dog. If the bald eagle needs the cow then the bald eagle sees the cow. If the bald eagle does not like the mouse then the mouse needs the bald eagle. If something needs the mouse then it needs the cow. If something sees the mouse then it needs the bald eagle. If the dog does not see the bald eagle then the bald eagle needs the mouse. If something sees the cow then it sees the mouse. If something needs the bald eagle and it needs the dog then it likes the dog. If the mouse likes the cow then the mouse needs the cow. If something is red and it does not like the dog then the dog is big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog is blue.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-936",
+    "context": "Anne is blue. Bob is furry. Bob is rough. Erin is furry. Erin is quiet. Fiona is green. Fiona is white. All furry people are young. If someone is green then they are young. All furry, green people are quiet. All green, blue people are furry. If someone is rough then they are blue. If someone is white and furry then they are blue. All young people are green. If someone is young then they are rough. All rough, young people are white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is blue.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-582",
+    "context": "The dog chases the squirrel. The lion chases the rabbit. The lion needs the dog. The lion visits the dog. The lion visits the rabbit. The rabbit is cold. The squirrel visits the dog. If something is rough and it chases the rabbit then the rabbit is rough. If something chases the squirrel then it visits the dog. If something chases the lion then it is rough. If something is green then it needs the dog. If something is green then it needs the lion. If something visits the dog then it is green. If something needs the lion then it chases the lion. All cold things are green. If the rabbit needs the lion and the lion is cold then the lion visits the squirrel.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion does not chase the rabbit.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-901",
+    "context": "The bald eagle needs the dog. The bald eagle visits the cow. The cow is blue. The cow is young. The cow needs the bald eagle. The cow needs the lion. The cow visits the bald eagle. The cow visits the dog. The cow visits the lion. The dog eats the lion. The dog is cold. The lion needs the cow. The lion visits the bald eagle. The lion visits the dog. If someone eats the dog and they need the dog then the dog eats the lion. If someone visits the cow then they visit the bald eagle. If someone is blue then they need the lion. If someone is cold then they eat the bald eagle. If someone needs the dog then the dog visits the bald eagle. If someone is blue and not big then they are cold. If someone visits the bald eagle then they eat the lion. If someone eats the lion and the lion visits the bald eagle then they are blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion visits the lion.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-438",
+    "context": "Anne is furry. Dave is red. Dave is rough. Dave is round. Dave is white. Erin is big. Erin is cold. Erin is rough. Erin is white. Fiona is big. Fiona is red. White things are big. All red, cold things are round. Furry things are cold. All red things are white. Cold things are red. Big things are rough. If something is white and not red then it is rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is white.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 12)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-739",
+    "context": "Anne is nice. Anne is red. Anne is rough. Anne is white. Anne is young. Charlie is rough. Charlie is white. Fiona is cold. Fiona is red. Fiona is rough. Gary is young. All rough things are round. If something is young then it is red. If something is nice and round then it is cold. Nice, white things are young. If something is rough then it is young. Rough things are young. If something is round then it is nice. All young things are white. All white things are rough.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is not rough.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-312",
+    "context": "The dog chases the squirrel. The dog likes the tiger. The lion chases the squirrel. The lion is big. The lion is red. The lion likes the tiger. The lion visits the squirrel. The lion visits the tiger. The squirrel chases the lion. The squirrel is nice. The squirrel likes the lion. The tiger chases the dog. The tiger is kind. The tiger is red. The tiger likes the dog. The tiger likes the lion. If something chases the lion then the lion is blue. If something is kind then it chases the tiger. If something chases the tiger then it visits the dog. If something visits the lion then it likes the squirrel. If something is red and it chases the tiger then it likes the squirrel. If something chases the tiger and it visits the squirrel then the squirrel visits the tiger. If something visits the dog then the dog likes the lion. If something is kind and it visits the dog then the dog is kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The tiger is nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-1066",
+    "context": "Bob is quiet. Bob is white. Dave is kind. Dave is red. Dave is young. Fiona is red. Fiona is round. Gary is quiet. Gary is red. Gary is round. White things are round. If something is kind and white then it is green. All young things are kind. All round things are young. All quiet, kind things are white. Quiet, green things are red. Young, quiet things are kind. All quiet, red things are kind. If Gary is young then Gary is round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Dave is kind.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-728",
+    "context": "The bald eagle sees the lion. The cow chases the lion. The cow is blue. The cow is round. The cow sees the rabbit. The lion is blue. The lion sees the bald eagle. The rabbit is nice. The rabbit needs the bald eagle. The rabbit needs the lion. The rabbit sees the cow. If something sees the rabbit then it needs the bald eagle. If something needs the bald eagle then it needs the lion. If something is nice and it does not chase the cow then the cow is blue. If something is blue then it needs the rabbit. If something needs the rabbit then it sees the rabbit. If something sees the bald eagle and it needs the rabbit then the bald eagle is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The rabbit does not need the bald eagle.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-299",
+    "context": "The bald eagle is nice. The bald eagle needs the dog. The bald eagle visits the dog. The bear is blue. The bear needs the bald eagle. The dog chases the bald eagle. The dog is cold. The dog visits the bear. The lion is blue. The lion needs the bear. If someone is big then they chase the dog. If someone chases the bear and they chase the dog then the bear is nice. If the bear chases the lion then the lion needs the bald eagle. If someone is young and big then they visit the bald eagle. If the lion is not young then the lion chases the bear. If someone chases the bear then the bear chases the lion. If someone chases the lion then the lion is big. If someone is cold and they do not visit the bald eagle then they chase the bald eagle.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The dog needs the bear.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (facts.kfb, line 1)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-502",
+    "context": "The bear eats the rabbit. The bear sees the squirrel. The mouse eats the squirrel. The mouse is kind. The mouse sees the rabbit. The rabbit needs the squirrel. The squirrel eats the bear. If someone sees the squirrel and the squirrel sees the bear then the squirrel needs the mouse. If someone needs the rabbit and the rabbit sees the mouse then the mouse sees the rabbit. If someone is rough then they need the rabbit. If someone needs the rabbit then the rabbit sees the squirrel. If someone sees the squirrel then they are rough. If someone is nice and they need the mouse then they are rough. If someone is green then they are kind.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse sees the rabbit.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-1103",
+    "context": "Bob is blue. Bob is white. Erin is blue. Gary is nice. Harry is blue. Harry is kind. Harry is nice. Harry is red. Harry is round. Harry is white. If Erin is kind then Erin is red. Kind people are red. If someone is kind and blue then they are red. If Bob is round then Bob is white. If Bob is round then Bob is white. If someone is blue and nice then they are green. If someone is blue and white then they are nice. Blue people are kind. If Erin is red then Erin is white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not white.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-622",
+    "context": "Anne is nice. Anne is red. Bob is smart. Bob is young. Erin is red. Erin is round. Fiona is kind. Fiona is nice. Fiona is red. Fiona is smart. If something is round then it is nice. Nice things are round. If Bob is kind then Bob is furry. All smart, kind things are nice. All kind, young things are round. If something is young and smart then it is round. Red things are kind. If Anne is furry then Anne is red. If something is nice then it is red.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Erin is young.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-581",
+    "context": "The cat likes the rabbit. The cat likes the tiger. The mouse is blue. The mouse is nice. The mouse is round. The mouse visits the tiger. The rabbit likes the tiger. The rabbit visits the tiger. The tiger eats the mouse. The tiger eats the rabbit. The tiger visits the cat. If the mouse is big then the mouse visits the cat. If something visits the mouse then it visits the tiger. If something likes the tiger and the tiger eats the cat then the cat is red. If something visits the tiger then the tiger visits the mouse. If something is blue and it visits the cat then it likes the rabbit. If something is nice then it likes the cat. If something is blue then it likes the cat. If something is round then it is nice. If something visits the tiger then it is round.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat likes the tiger.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-354",
+    "context": "Anne is nice. Bob is big. Bob is blue. Charlie is kind. Charlie is nice. Charlie is red. Harry is blue. If something is kind then it is blue. All round things are kind. If something is cold then it is kind. If something is kind and big then it is round. Red, big things are round. Nice things are cold. If Charlie is round and Charlie is not nice then Charlie is red. If Anne is cold and Anne is blue then Anne is big. If Bob is kind and Bob is nice then Bob is big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Harry is not blue.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 42)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNoneg-CWA-D5-151",
+    "context": "The cat chases the tiger. The cat is red. The lion is nice. The lion is red. The lion sees the cat. The lion sees the rabbit. The lion sees the tiger. The rabbit chases the tiger. The rabbit sees the tiger. The tiger chases the cat. The tiger chases the rabbit. The tiger is nice. If someone is red and they eat the rabbit then they are blue. If the lion eats the cat and the lion chases the rabbit then the cat is kind. If the rabbit eats the tiger then the tiger is nice. If someone is rough then they see the cat. If someone is nice and they chase the rabbit then the rabbit is nice. If someone eats the cat and they are kind then they see the tiger. If someone is nice and they chase the tiger then they are blue. If someone is blue then they eat the cat. If someone eats the cat then the cat is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The cat is rough.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "Invalid query: Rough(cat)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-769",
+    "context": "The cow eats the lion. The cow eats the mouse. The cow is cold. The cow likes the lion. The lion eats the mouse. The lion eats the tiger. The lion likes the mouse. The lion needs the cow. The lion needs the tiger. The mouse is nice. The mouse likes the lion. The tiger is round. If someone is kind and nice then they need the lion. If someone likes the mouse then the mouse is big. If someone needs the cow and they are round then the cow is round. If someone is big then they need the cow. If someone likes the tiger then the tiger needs the mouse. If someone eats the tiger then they need the tiger. All round people are big.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The lion eats the tiger.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNeg-CWA-D5-723",
+    "context": "Bob is cold. Bob is kind. Bob is quiet. Bob is red. Bob is round. Dave is kind. Gary is kind. Gary is quiet. Harry is cold. Harry is red. Harry is young. If Dave is quiet then Dave is cold. If someone is quiet and cold then they are round. Cold people are quiet. All cold, kind people are quiet. If someone is rough then they are young. Kind people are rough. If someone is young then they are cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not kind.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-653",
+    "context": "The bear chases the dog. The bear visits the dog. The bear visits the mouse. The cat chases the bear. The cat is cold. The cat visits the dog. The dog chases the bear. The dog eats the mouse. The dog visits the cat. The mouse eats the dog. The mouse is blue. The mouse visits the dog. If someone is green then they eat the bear. If someone visits the dog then the dog is green. If someone eats the bear then they eat the cat. If someone is big and they visit the mouse then they visit the bear. If someone is green then they visit the bear. If the mouse eats the dog then the dog is young. If someone chases the bear then they are young. If the bear visits the dog and the dog eats the cat then the bear is big. If someone chases the dog and the dog does not eat the bear then the bear is blue.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The mouse is big.",
+    "answer": "B",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 54)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_RelNeg-CWA-D5-102",
+    "context": "The dog eats the squirrel. The dog eats the tiger. The dog sees the rabbit. The dog sees the squirrel. The rabbit is big. The squirrel is big. The squirrel is nice. The squirrel visits the dog. The tiger is big. The tiger is blue. If the squirrel sees the tiger then the squirrel is blue. If someone is nice then they see the dog. If someone sees the rabbit and the rabbit sees the squirrel then they visit the tiger. If someone is blue then they visit the tiger. If the squirrel visits the tiger then the tiger visits the dog. If someone is big then they see the squirrel. If someone sees the dog and the dog is not big then they are kind. If someone is big then they visit the squirrel. If someone visits the squirrel then they see the tiger.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? The squirrel is nice.",
+    "answer": "A",
+    "flag": "execution error",
+    "error": "invalid syntax (rules.krb, line 41)",
+    "predicted_answer": "Execution Error"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-521",
+    "context": "Bob is big. Bob is blue. Bob is kind. Bob is quiet. Charlie is blue. Erin is big. Erin is cold. Erin is kind. Harry is big. Harry is blue. Harry is kind. Harry is nice. Harry is quiet. Harry is smart. Blue, quiet things are smart. All big, blue things are nice. Kind things are big. All cold things are big. If Bob is blue and Bob is smart then Bob is big. All quiet things are smart. All smart things are kind. All blue things are cold. If something is blue and big then it is quiet.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Bob is not big.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-654",
+    "context": "Bob is blue. Bob is kind. Bob is red. Charlie is nice. Erin is kind. Erin is red. Gary is blue. If something is quiet and cold then it is rough. Cold things are quiet. If something is kind then it is red. All nice things are quiet. Nice, rough things are kind. If Bob is cold then Bob is kind. If Bob is quiet and Bob is blue then Bob is nice. All quiet, kind things are blue. All quiet things are cold.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Gary is nice.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-528",
+    "context": "Charlie is big. Dave is nice. Dave is round. Erin is big. Erin is nice. Fiona is red. Fiona is rough. If someone is red and big then they are nice. If Dave is round and Dave is rough then Dave is big. If someone is round and young then they are big. All nice people are young. If Charlie is round and Charlie is big then Charlie is young. If someone is red then they are big. All rough, green people are round. If someone is big then they are red. Young people are green.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Fiona is red.",
+    "answer": "A",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "A"
+  },
+  {
+    "id": "ProofWriter_AttNoneg-CWA-D5-500",
+    "context": "Anne is blue. Anne is cold. Anne is furry. Anne is red. Anne is round. Anne is white. Bob is big. Dave is round. Dave is white. Harry is big. Harry is red. Harry is white. All blue things are white. If something is cold then it is red. Furry, blue things are red. If something is round and big then it is blue. If Anne is cold and Anne is red then Anne is big. All red things are round. If something is big then it is cold. If something is cold and furry then it is white.",
+    "question": "Based on the above information, is the following statement true, false, or unknown? Anne is not blue.",
+    "answer": "B",
+    "flag": "success",
+    "error": "",
+    "predicted_answer": "B"
+  }
+]
