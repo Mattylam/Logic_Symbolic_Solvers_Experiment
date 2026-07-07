@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logic-solvers"
+version = "0.1.0"
+description = "LLM + symbolic solver pipeline for deductive reasoning benchmarks (FOLIO, ProofWriter, ProntoQA)"
+requires-python = ">=3.10"
+dependencies = [
+    "litellm>=1.40",
+    "z3-solver>=4.13",
+    "pyke3>=1.1.1",
+    "nltk>=3.8",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-mock>=3.12"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,7 @@
+litellm>=1.40
+z3-solver>=4.13
+pyke3>=1.1.1
+nltk>=3.8
+tqdm>=4.66
+pytest>=8.0
+pytest-mock>=3.12
