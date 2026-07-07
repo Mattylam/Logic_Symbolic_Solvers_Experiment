@@ -6,7 +6,7 @@ import re
 import os
 import pickle
 
-from Z3_utils import make_z3_enum_line, execute_z3_test
+from logic_solvers.solvers.z3_utils import make_z3_enum_line, execute_z3_test
 
 class Z3_Program:
     def __init__(self, logic_program: str, assumption) -> None:
@@ -101,7 +101,7 @@ class Z3_Program:
 
             vars = set()
             functions = set()
-            PREDEFIND_FUNCS = ["ForAll", "Exist", "And", "Or", "Not", "Implies", "Exists"]
+            PREDEFIND_FUNCS = ["ForAll", "Exist", "Exists", "And", "Or", "Not", "Implies", "Xor"]
             PREDEFIND_QUNT_VARS = ["x"]
 
             for line in lines:
@@ -159,7 +159,7 @@ class Z3_Program:
             assert lines[-1].startswith("return")
             result_line = lines[-1]
             lines = lines[:-1]
-            PREDEFIND_FUNCS = ["ForAll", "Exist", "And", "Or", "Not", "Implies","Xor", "Exists"]
+            PREDEFIND_FUNCS = ["ForAll", "Exist", "Exists", "And", "Or", "Not", "Implies", "Xor"]
             PREDEFIND_QUNT_VARS = ["x"]
             vars = set()
             functions = set()
