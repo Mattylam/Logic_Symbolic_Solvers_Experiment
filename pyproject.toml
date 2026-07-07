@@ -10,13 +10,16 @@ requires-python = ">=3.10"
 dependencies = [
     "litellm>=1.40",
     "z3-solver>=4.13",
-    "pyke3>=1.1.1",
     "nltk>=3.8",
     "tqdm>=4.66",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "pytest-mock>=3.12"]
+# Pyke has no installable distribution on PyPI (metadata exists, release files do not).
+# The Pyke solver path requires installing a Python-3-compatible Pyke fork manually
+# before `--solver Pyke` will work; see README.
+pyke = ["pyke3"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
