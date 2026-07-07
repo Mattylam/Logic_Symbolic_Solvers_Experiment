@@ -23,7 +23,7 @@ pip install -e .
 pip install -e ".[pyke]"
 ```
 
-Note: `pyke3` has no installable distribution on PyPI (metadata exists, release files do not). The above install will always fail. To use `--solver Pyke`, manually install a Python-3-compatible Pyke fork from source first (e.g., `pip install git+https://github.com/pythological/pyke.git`).
+Note: `pyke3` has no installable distribution on PyPI (metadata exists, release files do not). The above install will always fail. To use `--solver Pyke`, you must manually install a Python-3-compatible Pyke fork from source yourself — there is no pip command that works out of the box.
 
 **For Prover9 support**, Prover9 must be installed separately on your system.
 
