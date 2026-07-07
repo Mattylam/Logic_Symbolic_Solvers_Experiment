@@ -26,6 +26,7 @@ def execute_z3_test(code, filename=None, flag_keepfile=False, timeout=1.0, use_c
     if _use_cache and filename in ExecCache.cache:
         return ExecCache.cache[filename]
 
+    os.makedirs(PREFIX, exist_ok=True)
     filename = join(PREFIX, filename + ".py")
 
     with open(filename, "w") as f:
