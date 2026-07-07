@@ -12,6 +12,7 @@ dependencies = [
     "z3-solver>=4.13",
     "nltk>=3.8",
     "tqdm>=4.66",
+    "ply>=3.11",
 ]
 
 [project.optional-dependencies]
