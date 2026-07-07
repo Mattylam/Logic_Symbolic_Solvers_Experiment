@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.cache_program/
+compiled_krb/
+*.egg-info/
+.pytest_cache/
+docs/
+excalidraw.log
