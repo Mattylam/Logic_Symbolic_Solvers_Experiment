@@ -18,17 +18,12 @@ pip install -e .
 
 **Core dependencies:** `litellm`, `z3-solver`, `nltk`, `tqdm`, `ply`.
 
-**Optional Z3-only install** (if you only use `--solver Z3`):
-```bash
-pip install litellm z3-solver nltk tqdm ply
-```
-
 **For Pyke support**, install the optional extra:
 ```bash
 pip install -e ".[pyke]"
 ```
 
-Note: `pyke3` has no PyPI distribution with built wheels. If the above fails, manually install a Python-3-compatible Pyke fork (e.g., `pip install git+https://github.com/pythological/pyke.git`) before retrying.
+Note: `pyke3` has no installable distribution on PyPI (metadata exists, release files do not). The above install will always fail. To use `--solver Pyke`, manually install a Python-3-compatible Pyke fork from source first (e.g., `pip install git+https://github.com/pythological/pyke.git`).
 
 **For Prover9 support**, Prover9 must be installed separately on your system.
 
@@ -40,7 +35,7 @@ The package uses [litellm](https://github.com/BerriAI/litellm) as a unified LLM 
 - [ProofWriter](https://allenai.org/data/proofwriter)
 - [FOLIO](https://github.com/Yale-LILY/FOLIO)
 
-`Datasets/*.json` is included in the repo, reconstructed from `Processed_Datasets/*.json` (the original raw benchmark releases were never checked into this repo). Reconstructed files are missing the original `options` field (`null` — not recoverable from the processed results); fetch the original benchmark files directly if you need that field. `Prompts/` (few-shot prompt templates) is still not included in the repo — see below.
+`Datasets/*.json` is included in the repo, reconstructed from `Processed_Datasets/*.json` (the original raw benchmark releases were never checked into this repo). Reconstructed files are missing the original `options` field (`null` — not recoverable from the processed results); fetch the original benchmark files directly if you need that field. `Prompts/` (few-shot prompt templates) is still not included in the repo.
 
 ## Pipeline
 
@@ -79,6 +74,12 @@ python scripts/run_evaluation.py \
 
 ## Development
 
+Install the dev extra first:
+```bash
+pip install -e ".[dev]"
+```
+
+Then run tests:
 ```bash
 pytest tests/ -v
 ```
