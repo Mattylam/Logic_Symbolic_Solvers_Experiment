@@ -3,6 +3,7 @@ z3-solver>=4.13
 nltk>=3.8
 tqdm>=4.66
 ply>=3.11
+python-dotenv>=1.0
 pytest>=8.0
 pytest-mock>=3.12
 # pyke3 (Pyke solver): no installable PyPI distribution exists (metadata only,

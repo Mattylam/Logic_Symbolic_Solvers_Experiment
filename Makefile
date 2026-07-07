@@ -26,7 +26,11 @@ help:
 	@echo "Pipeline variables (override on the command line):"
 	@echo "  DATASET=$(DATASET) SOLVER=$(SOLVER) MODEL=$(MODEL) DEPTH=$(DEPTH) SHOT=$(SHOT) WORLD=$(WORLD)"
 	@echo ""
-	@echo "Example: make pipeline DATASET=ProofWriter SOLVER=Pyke MODEL=gpt-4o WORLD=CWA API_KEY=sk-..."
+	@echo "API keys: put them in .env (see .env.example) -- litellm reads them from the"
+	@echo "environment automatically. API_KEY=... on the command line is only needed to"
+	@echo "override that for a single run."
+	@echo ""
+	@echo "Example: make pipeline DATASET=ProofWriter SOLVER=Pyke MODEL=gpt-4o WORLD=CWA"
 
 install:
 	pip install -e .

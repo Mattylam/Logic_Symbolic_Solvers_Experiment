@@ -7,3 +7,4 @@ compiled_krb/
 docs/
 excalidraw.log
 archive/
+.env

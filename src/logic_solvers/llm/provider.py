@@ -2,7 +2,16 @@
 
 Adding support for a new model is a config change (extend _PROVIDER_PREFIX_RULES
 below if litellm needs a provider-prefixed model string), not a new class.
+
+Provider API keys (OPENAI_API_KEY, GEMINI_API_KEY, COHERE_API_KEY, etc.) are read
+from a .env file at the repo root, if present -- see .env.example. litellm reads
+these directly from the environment; --api_key on the CLI is only needed as a
+one-off override.
 """
+
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv(usecwd=True))
 
 import litellm
 

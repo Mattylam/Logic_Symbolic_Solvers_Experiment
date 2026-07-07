@@ -29,7 +29,7 @@ class LogicProgramGenerator:
         self.model_name = args.model_name
         self.dataset_length = 200
 
-        self.llm = LiteLLMProvider(args.model_name, api_key=args.api_key, max_new_tokens=args.max_new_tokens)
+        self.llm = LiteLLMProvider(args.model_name, api_key=args.api_key or None, max_new_tokens=args.max_new_tokens)
         self.load_prompt_templates()
 
     def load_prompt_templates(self) -> None:

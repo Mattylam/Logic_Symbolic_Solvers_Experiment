@@ -34,7 +34,13 @@ Note: `pyke3` has no installable distribution on PyPI (metadata exists, release 
 
 **For Prover9 support**, Prover9 must be installed separately on your system.
 
-The package uses [litellm](https://github.com/BerriAI/litellm) as a unified LLM adapter, so any model litellm supports (OpenAI, Gemini, Cohere, Anthropic, local models via Ollama, etc.) works by passing its model name — no new provider code needed. Set the relevant provider API key as an environment variable (e.g. `OPENAI_API_KEY`, `GEMINI_API_KEY`, `COHERE_API_KEY`) or pass `--api_key` directly.
+The package uses [litellm](https://github.com/BerriAI/litellm) as a unified LLM adapter, so any model litellm supports (OpenAI, Gemini, Cohere, Anthropic, local models via Ollama, etc.) works by passing its model name — no new provider code needed.
+
+**API keys:** copy `.env.example` to `.env` and fill in the keys for whichever providers you use:
+```bash
+cp .env.example .env
+```
+`.env` is gitignored — never commit it. The package loads it automatically (via `python-dotenv`) and litellm reads the provider-specific variable (`OPENAI_API_KEY`, `GEMINI_API_KEY`, `COHERE_API_KEY`, `ANTHROPIC_API_KEY`, ...) straight from the environment. `--api_key` / `API_KEY=` on the CLI is only needed to override this for a single run.
 
 ## Datasets
 
@@ -49,9 +55,8 @@ The package uses [litellm](https://github.com/BerriAI/litellm) as a unified LLM 
 Each stage has a `make` target — pass parameters as `VAR=value` (see `make help` for the full variable list and defaults). The underlying `python scripts/*.py` command works the same way if you'd rather call it directly.
 
 ```bash
-make generate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=sk-...
+make generate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
 # or: python scripts/generate_logic_programs.py \
-#     --api_key "your API key" \
 #     --solver "Z3/Pyke/Prover9" \
 #     --depth "d2/d3/d5" \
 #     --dataset_name "ProntoQA|ProofWriter|FOLIO" \
@@ -88,7 +93,7 @@ For `ProofWriter`, also pass `WORLD=OWA` or `WORLD=CWA` (`--World` on the raw CL
 
 To run all three stages back-to-back for one dataset/solver/model combination:
 ```bash
-make pipeline DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=sk-...
+make pipeline DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
 ```
 
 ## Development
