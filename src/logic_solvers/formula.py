@@ -1,5 +1,5 @@
 from nltk.tree import Tree
-from fol_parser import FOL_Parser
+from logic_solvers.parsing.fol_parser import FOL_Parser
 from concurrent.futures import ThreadPoolExecutor, TimeoutError, ProcessPoolExecutor
 import signal
 
@@ -34,9 +34,6 @@ class FOL_Formula:
     def __str__(self) -> str:
         _, rule_str = self.parser.msplit(''.join(self.tree.leaves()))
         return rule_str
-
-    def is_valid(self):
-        return self.is_valid
 
     def _get_formula_template(self, tree, name_mapping):
         for i, subtree in enumerate(tree):
