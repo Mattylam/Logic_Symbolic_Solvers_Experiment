@@ -3,6 +3,8 @@ import json
 import os
 import argparse
 
+from logic_solvers.config import processed_dataset_path
+
 
 # these functions are heavily influenced by the HF squad_metrics.py script
 def normalize_text(s):
@@ -122,14 +124,11 @@ def parse_args():
     return args
 
 
-if __name__ == "__main__":
+def main() -> None:
     args = parse_args()
-    if args.dataset_name == "ProofWriter":
-        result_file = f'Processed_Datasets/{args.dataset_name}_{args.World}_{args.depth}_{args.solver}_{args.model_name}.json'
-    elif args.dataset_name == "FOLIO" and args.shot > 1:
-        result_file = f'Processed_Datasets/{args.dataset_name}_{args.shot}Shot_{args.solver}_{args.model_name}.json'
-    else:
-        result_file = f'Processed_Datasets/{args.dataset_name}_{args.solver}_{args.model_name}.json'
-    #result_file = f'Processed_Datasets/{args.dataset_name}_{args.solver}_{args.model_name}.json'
-    #evaluate_QA(result_file)
+    result_file = processed_dataset_path(args.dataset_name, args.solver, args.model_name, args.World, args.depth, args.shot)
     full_evaluation(result_file)
+
+
+if __name__ == "__main__":
+    main()
