@@ -1,4 +1,4 @@
-# Logic Symbolic Solvers Experiment
+# A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters
 
 Data and Code for **A Closer Look at Logical Reasoning with LLMs: The Choice of Tool Matters**
 
