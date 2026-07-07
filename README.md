@@ -14,6 +14,7 @@ Requires Python 3.10+. Install the package with:
 
 ```bash
 pip install -e .
+# or: make install
 ```
 
 **Core dependencies:** `litellm`, `z3-solver`, `nltk`, `tqdm`, `ply`.
@@ -21,6 +22,7 @@ pip install -e .
 **For Pyke support**, install the optional extra:
 ```bash
 pip install -e ".[pyke]"
+# or: make install-pyke
 ```
 
 Note: `pyke3` has no installable distribution on PyPI (metadata exists, release files do not). The above install will always fail. To use `--solver Pyke`, you must manually install a Python-3-compatible Pyke fork from source yourself — there is no pip command that works out of the box.
@@ -39,6 +41,8 @@ The package uses [litellm](https://github.com/BerriAI/litellm) as a unified LLM 
 
 ## Pipeline
 
+Each stage can be run directly via `python scripts/*.py`, or via the equivalent `make` target (parameters passed as `VAR=value`; see `make help` for the full variable list and defaults).
+
 ```bash
 python scripts/generate_logic_programs.py \
     --api_key "your API key" \
@@ -48,6 +52,7 @@ python scripts/generate_logic_programs.py \
     --model_name "any litellm-supported model name" \
     --shot "1/2/4" \
     --max_new_tokens 2000
+# or: make generate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=...
 ```
 
 Saves to `Answered_Datasets/`.
@@ -59,6 +64,7 @@ python scripts/run_inference.py \
     --dataset_name "ProntoQA|ProofWriter|FOLIO" \
     --model_name "..." \
     --shot "1/2/4"
+# or: make infer DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
 ```
 
 Saves to `Processed_Datasets/`.
@@ -70,18 +76,25 @@ python scripts/run_evaluation.py \
     --dataset_name "ProntoQA|ProofWriter|FOLIO" \
     --model_name "..." \
     --shot "1/2/4"
+# or: make evaluate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
 ```
+
+For `ProofWriter`, also pass `WORLD=OWA` or `WORLD=CWA` (`--World` on the raw CLI) to any of the three commands above.
 
 ## Development
 
 Install the dev extra first:
 ```bash
 pip install -e ".[dev]"
+# or: make install-dev
 ```
 
 Then run tests:
 ```bash
 pytest tests/ -v
+# or: make test
 ```
+
+`make clean` removes test/solver scratch artifacts (`tmp/`, `.cache_program/`, `compiled_krb/`, `__pycache__/`, `.pytest_cache/`).
 
 This paper's code was inspired by SatLM and LogicLM.
