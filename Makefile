@@ -1,4 +1,4 @@
-.PHONY: help install install-dev install-pyke test generate infer evaluate clean
+.PHONY: help install install-all install-dev install-pyke test generate infer evaluate pipeline clean
 
 # Overridable pipeline parameters — e.g. make generate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
 DATASET       ?= FOLIO
@@ -15,16 +15,18 @@ help:
 	@echo "  install       Install the package (core dependencies only)"
 	@echo "  install-dev   Install the package with dev/test dependencies"
 	@echo "  install-pyke  Install the optional pyke extra (will fail — see README)"
+	@echo "  install-all   Install core + dev dependencies (everything except pyke, which cannot succeed)"
 	@echo "  test          Run the test suite"
 	@echo "  generate      Run stage 1 (logic program generation)"
 	@echo "  infer         Run stage 2 (symbolic solver inference)"
 	@echo "  evaluate      Run stage 3 (scoring)"
+	@echo "  pipeline      Run generate, infer, and evaluate in sequence"
 	@echo "  clean         Remove caches and generated solver artifacts"
 	@echo ""
 	@echo "Pipeline variables (override on the command line):"
 	@echo "  DATASET=$(DATASET) SOLVER=$(SOLVER) MODEL=$(MODEL) DEPTH=$(DEPTH) SHOT=$(SHOT) WORLD=$(WORLD)"
 	@echo ""
-	@echo "Example: make generate DATASET=ProofWriter SOLVER=Pyke MODEL=gpt-4o WORLD=CWA API_KEY=sk-..."
+	@echo "Example: make pipeline DATASET=ProofWriter SOLVER=Pyke MODEL=gpt-4o WORLD=CWA API_KEY=sk-..."
 
 install:
 	pip install -e .
@@ -34,6 +36,11 @@ install-dev:
 
 install-pyke:
 	pip install -e ".[pyke]"
+
+install-all: install-dev
+	@echo ""
+	@echo "Skipped the 'pyke' extra: pyke3 has no installable PyPI distribution and 'pip install -e \".[pyke]\"' always fails (see README)."
+	@echo "Install a Python-3-compatible Pyke fork from source manually if you need --solver Pyke."
 
 test:
 	pytest tests/ -v
@@ -66,6 +73,8 @@ evaluate:
 		--depth $(DEPTH) \
 		--shot $(SHOT) \
 		--World "$(WORLD)"
+
+pipeline: generate infer evaluate
 
 clean:
 	rm -rf tmp .cache_program compiled_krb .pytest_cache

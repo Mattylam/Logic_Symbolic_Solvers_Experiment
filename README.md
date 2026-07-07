@@ -17,6 +17,11 @@ pip install -e .
 # or: make install
 ```
 
+To install everything needed for development and testing in one step (core + dev dependencies; the `pyke` extra is deliberately excluded since it cannot succeed — see below):
+```bash
+make install-all
+```
+
 **Core dependencies:** `litellm`, `z3-solver`, `nltk`, `tqdm`, `ply`.
 
 **For Pyke support**, install the optional extra:
@@ -80,6 +85,11 @@ python scripts/run_evaluation.py \
 ```
 
 For `ProofWriter`, also pass `WORLD=OWA` or `WORLD=CWA` (`--World` on the raw CLI) to any of the three commands above.
+
+To run all three stages back-to-back for one dataset/solver/model combination:
+```bash
+make pipeline DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=sk-...
+```
 
 ## Development
 
