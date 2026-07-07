@@ -1,6 +1,6 @@
 from z3 import *
 from ply import lex, yacc
-from Formula import FOL_Formula
+from logic_solvers.formula import FOL_Formula
 
 """
 Original grammar:

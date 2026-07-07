@@ -1,8 +1,8 @@
 import re
 from nltk.inference.prover9 import *
 from nltk.sem.logic import NegatedExpression
-from fol_prover9_parser import Prover9_FOL_Formula
-from Formula import FOL_Formula
+from logic_solvers.parsing.fol_prover9_parser import Prover9_FOL_Formula
+from logic_solvers.formula import FOL_Formula
 
 # set the path to the prover9 executable
 os.environ['PROVER9'] = '../prover9/bin'
