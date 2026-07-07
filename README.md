@@ -13,8 +13,8 @@ The emergence of Large Language Models (LLMs) has demonstrated promising progres
 Requires Python 3.10+. Install the package with:
 
 ```bash
-pip install -e .
-# or: make install
+make install
+# or: pip install -e .
 ```
 
 To install everything needed for development and testing in one step (core + dev dependencies; the `pyke` extra is deliberately excluded since it cannot succeed — see below):
@@ -26,8 +26,8 @@ make install-all
 
 **For Pyke support**, install the optional extra:
 ```bash
-pip install -e ".[pyke]"
-# or: make install-pyke
+make install-pyke
+# or: pip install -e ".[pyke]"
 ```
 
 Note: `pyke3` has no installable distribution on PyPI (metadata exists, release files do not). The above install will always fail. To use `--solver Pyke`, you must manually install a Python-3-compatible Pyke fork from source yourself — there is no pip command that works out of the box.
@@ -46,42 +46,42 @@ The package uses [litellm](https://github.com/BerriAI/litellm) as a unified LLM 
 
 ## Pipeline
 
-Each stage can be run directly via `python scripts/*.py`, or via the equivalent `make` target (parameters passed as `VAR=value`; see `make help` for the full variable list and defaults).
+Each stage has a `make` target — pass parameters as `VAR=value` (see `make help` for the full variable list and defaults). The underlying `python scripts/*.py` command works the same way if you'd rather call it directly.
 
 ```bash
-python scripts/generate_logic_programs.py \
-    --api_key "your API key" \
-    --solver "Z3/Pyke/Prover9" \
-    --depth "d2/d3/d5" \
-    --dataset_name "ProntoQA|ProofWriter|FOLIO" \
-    --model_name "any litellm-supported model name" \
-    --shot "1/2/4" \
-    --max_new_tokens 2000
-# or: make generate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=...
+make generate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=sk-...
+# or: python scripts/generate_logic_programs.py \
+#     --api_key "your API key" \
+#     --solver "Z3/Pyke/Prover9" \
+#     --depth "d2/d3/d5" \
+#     --dataset_name "ProntoQA|ProofWriter|FOLIO" \
+#     --model_name "any litellm-supported model name" \
+#     --shot "1/2/4" \
+#     --max_new_tokens 2000
 ```
 
 Saves to `Answered_Datasets/`.
 
 ```bash
-python scripts/run_inference.py \
-    --solver "Z3/Pyke/Prover9" \
-    --depth "d2/d3/d5" \
-    --dataset_name "ProntoQA|ProofWriter|FOLIO" \
-    --model_name "..." \
-    --shot "1/2/4"
-# or: make infer DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
+make infer DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
+# or: python scripts/run_inference.py \
+#     --solver "Z3/Pyke/Prover9" \
+#     --depth "d2/d3/d5" \
+#     --dataset_name "ProntoQA|ProofWriter|FOLIO" \
+#     --model_name "..." \
+#     --shot "1/2/4"
 ```
 
 Saves to `Processed_Datasets/`.
 
 ```bash
-python scripts/run_evaluation.py \
-    --solver "Z3/Pyke/Prover9" \
-    --depth "d2/d3/d5" \
-    --dataset_name "ProntoQA|ProofWriter|FOLIO" \
-    --model_name "..." \
-    --shot "1/2/4"
-# or: make evaluate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
+make evaluate DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o
+# or: python scripts/run_evaluation.py \
+#     --solver "Z3/Pyke/Prover9" \
+#     --depth "d2/d3/d5" \
+#     --dataset_name "ProntoQA|ProofWriter|FOLIO" \
+#     --model_name "..." \
+#     --shot "1/2/4"
 ```
 
 For `ProofWriter`, also pass `WORLD=OWA` or `WORLD=CWA` (`--World` on the raw CLI) to any of the three commands above.
@@ -95,14 +95,14 @@ make pipeline DATASET=FOLIO SOLVER=Z3 MODEL=gpt-4o API_KEY=sk-...
 
 Install the dev extra first:
 ```bash
-pip install -e ".[dev]"
-# or: make install-dev
+make install-dev
+# or: pip install -e ".[dev]"
 ```
 
 Then run tests:
 ```bash
-pytest tests/ -v
-# or: make test
+make test
+# or: pytest tests/ -v
 ```
 
 `make clean` removes test/solver scratch artifacts (`tmp/`, `.cache_program/`, `compiled_krb/`, `__pycache__/`, `.pytest_cache/`).
